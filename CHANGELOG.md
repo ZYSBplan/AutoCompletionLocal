@@ -6,4 +6,5 @@
 
 ### Added
 
-- New view for 
+- New view for selecting additional context
+  - Optionally files, mentioned in the .gitignore are automa
