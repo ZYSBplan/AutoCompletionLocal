@@ -11,4 +11,5 @@
 
 ## [0.1.4]
 
-- Add stat
+- Add status bar item with feed back when completion is ongoing or deactivated
+- A
