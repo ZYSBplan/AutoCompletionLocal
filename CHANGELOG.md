@@ -12,4 +12,4 @@
 ## [0.1.4]
 
 - Add status bar item with feed back when completion is ongoing or deactivated
-- A
+- Add visible files to completion context (can be disabled in setting
