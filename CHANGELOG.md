@@ -12,4 +12,9 @@
 ## [0.1.4]
 
 - Add status bar item with feed back when completion is ongoing or deactivated
-- Add visible files to completion context (can be disabled in setting
+- Add visible files to completion context (can be disabled in settings)
+
+## [0.1.2]
+
+- Add maximum number of lines for completion
+- Fi
