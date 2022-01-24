@@ -21,4 +21,5 @@
 
 ## [0.1.1]
 
--
+- Fix race condition error which crashed the extension
+- Fix extra space at t
