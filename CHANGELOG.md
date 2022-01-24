@@ -17,4 +17,8 @@
 ## [0.1.2]
 
 - Add maximum number of lines for completion
-- Fi
+- Fix leading space in completion (this time for real)
+
+## [0.1.1]
+
+-
