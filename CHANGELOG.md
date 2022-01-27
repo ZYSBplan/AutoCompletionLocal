@@ -22,4 +22,8 @@
 ## [0.1.1]
 
 - Fix race condition error which crashed the extension
-- Fix extra space at t
+- Fix extra space at the start of single line completion
+
+## [0.1.0]
+
+- Publish to Visual Stu
