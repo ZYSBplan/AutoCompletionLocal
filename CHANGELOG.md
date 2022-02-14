@@ -30,4 +30,5 @@
 
 ## [0.0.5]
 
-- Increase time between keystrokes before requestin
+- Increase time between keystrokes before requesting a new completion
+- Show inline completion even if autocomplet widget is activ
