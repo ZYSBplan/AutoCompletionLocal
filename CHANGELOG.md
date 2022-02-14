@@ -26,4 +26,8 @@
 
 ## [0.1.0]
 
-- Publish to Visual Stu
+- Publish to Visual Studio Marketplace
+
+## [0.0.5]
+
+- Increase time between keystrokes before requestin
