@@ -31,4 +31,5 @@
 ## [0.0.5]
 
 - Increase time between keystrokes before requesting a new completion
-- Show inline completion even if autocomplet widget is activ
+- Show inline completion even if autocomplet widget is active (can be disabled)
+- Fix bug where sometimes a running completion would not be stopped
