@@ -32,4 +32,8 @@
 
 - Increase time between keystrokes before requesting a new completion
 - Show inline completion even if autocomplet widget is active (can be disabled)
-- Fix bug where sometimes a running completion would not be stopped
+- Fix bug where sometimes a running completion would not be stopped if a new completion is triggered
+
+## [0.0.4]
+
+- Distinguish between single li
