@@ -37,4 +37,5 @@
 ## [0.0.4]
 
 - Distinguish between single line and multiline completion by checking text after the cursor
-- Add '
+- Add '\n' to stop token for single line
+- Reduce repetition of already
