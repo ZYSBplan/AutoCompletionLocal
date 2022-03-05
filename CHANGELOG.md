@@ -39,4 +39,4 @@
 - Distinguish between single line and multiline completion by checking text after the cursor
 - Add '\n' to stop token for single line
 - Reduce repetition of already existing symbols (like '}' or ';') at the end of a completion
-- Re
+- Remove completion from history for new line (most predictions where t
