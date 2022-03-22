@@ -45,4 +45,6 @@
 
 - Rework handling of old responses
 - Only call new completion if input deviates from previous completion
-- Add new Com
+- Add new Command: **Regenerate**
+- Custom stop sequences
+- Optionally reduce API calls (enabled by 
