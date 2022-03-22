@@ -47,4 +47,12 @@
 - Only call new completion if input deviates from previous completion
 - Add new Command: **Regenerate**
 - Custom stop sequences
-- Optionally reduce API calls (enabled by 
+- Optionally reduce API calls (enabled by default)
+
+## [0.0.2]
+
+- Reduce unnecessary requests
+
+## [0.0.1]
+
+-
