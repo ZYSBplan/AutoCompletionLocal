@@ -44,4 +44,5 @@
 ## [0.0.3]
 
 - Rework handling of old responses
-- Only call ne
+- Only call new completion if input deviates from previous completion
+- Add new Com
