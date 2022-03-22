@@ -55,4 +55,6 @@
 
 ## [0.0.1]
 
+- Add basic completion
+- Save `10` old responses to reduce LLM requests
 -
