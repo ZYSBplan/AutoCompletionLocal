@@ -57,4 +57,4 @@
 
 - Add basic completion
 - Save `10` old responses to reduce LLM requests
--
+- Add some settings to configure the extension
