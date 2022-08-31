@@ -1,3 +1,4 @@
 {
   "name": "localcompletion",
-  
+  "displayName": "LocalCompletion",
+  "description": "Local LLM based code complet
