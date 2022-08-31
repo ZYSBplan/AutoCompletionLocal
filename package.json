@@ -1,4 +1,7 @@
 {
   "name": "localcompletion",
   "displayName": "LocalCompletion",
-  "description": "Local LLM based code complet
+  "description": "Local LLM based code completion like Copilot",
+  "publisher": "lufixSch",
+  "version": "0.3.0",
+  "repos
