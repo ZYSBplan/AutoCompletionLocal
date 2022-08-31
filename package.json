@@ -6,4 +6,7 @@
   "version": "0.3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lufixSch/Loc
+    "url": "https://github.com/lufixSch/LocalCompletion"
+  },
+  "icon": "static/minimal_logo_dark.png",
+  "engine
