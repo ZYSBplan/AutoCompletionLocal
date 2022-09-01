@@ -9,4 +9,8 @@
     "url": "https://github.com/lufixSch/LocalCompletion"
   },
   "icon": "static/minimal_logo_dark.png",
-  "engine
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Machine Learning",
