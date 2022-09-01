@@ -14,3 +14,8 @@
   },
   "categories": [
     "Machine Learning",
+    "Snippets"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+ 
