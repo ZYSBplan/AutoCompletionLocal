@@ -32,4 +32,6 @@
     "menus": {
       "view/title": [
         {
-          "command": "localcompletion.refresh_co
+          "command": "localcompletion.refresh_context_view",
+          "when": "view == contextSelection",
+          "group": "naviga
