@@ -25,4 +25,8 @@
       "explorer": [
         {
           "id": "contextSelection",
-          
+          "name": "LocalCompletion Context"
+        }
+      ]
+    },
+    "
