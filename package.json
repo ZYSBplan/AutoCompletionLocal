@@ -21,4 +21,8 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "views": 
+    "views": {
+      "explorer": [
+        {
+          "id": "contextSelection",
+          
