@@ -29,4 +29,7 @@
         }
       ]
     },
-    "
+    "menus": {
+      "view/title": [
+        {
+          "command": "localcompletion.refresh_co
