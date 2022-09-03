@@ -37,4 +37,5 @@
           "group": "navigation"
         },
         {
-          "command": "localcompletion.ap
+          "command": "localcompletion.apply_context_gitignore",
+          "when": "view == contextSelection && !localc
