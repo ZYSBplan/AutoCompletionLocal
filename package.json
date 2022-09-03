@@ -34,4 +34,7 @@
         {
           "command": "localcompletion.refresh_context_view",
           "when": "view == contextSelection",
-          "group": "naviga
+          "group": "navigation"
+        },
+        {
+          "command": "localcompletion.ap
