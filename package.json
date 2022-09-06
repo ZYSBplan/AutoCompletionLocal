@@ -38,4 +38,7 @@
         },
         {
           "command": "localcompletion.apply_context_gitignore",
-          "when": "view == contextSelection && !localc
+          "when": "view == contextSelection && !localcompletion:useContextGitignore"
+        },
+        {
+          "com
