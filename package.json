@@ -41,4 +41,5 @@
           "when": "view == contextSelection && !localcompletion:useContextGitignore"
         },
         {
-          "com
+          "command": "localcompletion.disable_context_gitignore",
+          "wh
