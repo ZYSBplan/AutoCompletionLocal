@@ -42,4 +42,10 @@
         },
         {
           "command": "localcompletion.disable_context_gitignore",
-          "when": "view == contextSelection && localcompletion:useContextG
+          "when": "view == contextSelection && localcompletion:useContextGitignore"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "comma
