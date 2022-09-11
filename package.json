@@ -48,4 +48,5 @@
     },
     "commands": [
       {
-        "comma
+        "command": "localcompletion.select_endpoint",
+        "title": "LocalCompletion:
