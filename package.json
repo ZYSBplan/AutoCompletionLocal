@@ -53,4 +53,8 @@
       },
       {
         "command": "localcompletion.toggle",
-        "title": "LocalCompletion: Toggle code completi
+        "title": "LocalCompletion: Toggle code completion on/off"
+      },
+      {
+        "command": "localcompletion.regenerate",
+     
