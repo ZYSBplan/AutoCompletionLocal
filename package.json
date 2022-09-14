@@ -49,4 +49,7 @@
     "commands": [
       {
         "command": "localcompletion.select_endpoint",
-        "title": "LocalCompletion:
+        "title": "LocalCompletion: Change API Endpoint"
+      },
+      {
+        "command": "localc
