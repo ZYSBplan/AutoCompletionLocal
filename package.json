@@ -52,4 +52,5 @@
         "title": "LocalCompletion: Change API Endpoint"
       },
       {
-        "command": "localc
+        "command": "localcompletion.toggle",
+        "title": "LocalCompletion: Toggle code completi
