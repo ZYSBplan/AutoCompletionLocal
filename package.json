@@ -62,4 +62,7 @@
       {
         "command": "localcompletion.refresh_context_view",
         "title": "LocalCompletion: Refresh context view",
-        "icon": "$
+        "icon": "$(extensions-refresh)"
+      },
+      {
+        "command": "localcompletion.apply_
