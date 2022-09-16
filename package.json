@@ -60,3 +60,5 @@
         "title": "LocalCompletion: Regenerate completion"
       },
       {
+        "command": "localcompletion.refresh_context_view",
+        "title
