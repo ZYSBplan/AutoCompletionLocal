@@ -66,4 +66,8 @@
       },
       {
         "command": "localcompletion.apply_context_gitignore",
-        "title": "LocalCompletion: Apply .gitignore to cont
+        "title": "LocalCompletion: Apply .gitignore to context",
+        "shortTitle": "  Apply .gitignore to context"
+      },
+      {
+       
