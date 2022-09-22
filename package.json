@@ -71,4 +71,5 @@
       },
       {
         "command": "localcompletion.disable_context_gitignore",
-        "title": "LocalC
+        "title": "LocalCompletion: Disable .gitignore to context",
+        "shortTitl
