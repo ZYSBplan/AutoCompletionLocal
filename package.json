@@ -72,4 +72,9 @@
       {
         "command": "localcompletion.disable_context_gitignore",
         "title": "LocalCompletion: Disable .gitignore to context",
-        "shortTitl
+        "shortTitle": "✓ Apply .gitignore to context"
+      }
+    ],
+    "configuration": [
+      {
+  
