@@ -77,4 +77,6 @@
     ],
     "configuration": [
       {
-  
+        "title": "LocalCompletion",
+        "properties": {
+          "localcompl
