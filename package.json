@@ -80,4 +80,4 @@
         "title": "LocalCompletion",
         "properties": {
           "localcompletion.active_endpoint": {
-            "description": "The URL of 
+            "description": "The URL of any OpenAI compatible API which is then used for generating the 
