@@ -79,4 +79,5 @@
       {
         "title": "LocalCompletion",
         "properties": {
-          "localcompl
+          "localcompletion.active_endpoint": {
+            "description": "The URL of 
