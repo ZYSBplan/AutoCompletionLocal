@@ -82,4 +82,6 @@
           "localcompletion.active_endpoint": {
             "description": "The URL of any OpenAI compatible API which is then used for generating the code completion",
             "type": "string",
-            "default": "htt
+            "default": "http://localhost:5000/v1"
+          },
+          "localcompletion.endpo
