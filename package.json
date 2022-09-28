@@ -87,4 +87,6 @@
           "localcompletion.endpoints": {
             "description": "List of possible API endpoints in order to make switching easier",
             "type": "array",
-      
+            "default": [
+              "http://localhost:5000/v1"
+    
