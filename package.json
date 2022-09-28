@@ -89,4 +89,7 @@
             "type": "array",
             "default": [
               "http://localhost:5000/v1"
-    
+            ]
+          },
+          "localcompletion.temperature": {
+            
