@@ -84,4 +84,5 @@
             "type": "string",
             "default": "http://localhost:5000/v1"
           },
-          "localcompletion.endpo
+          "localcompletion.endpoints": {
+            "description": "List of possible API endpoints in
