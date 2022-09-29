@@ -92,4 +92,6 @@
             ]
           },
           "localcompletion.temperature": {
-            
+            "description": "Temperature of the LLM",
+            "type": "number",
+        
