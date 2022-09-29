@@ -94,4 +94,7 @@
           "localcompletion.temperature": {
             "description": "Temperature of the LLM",
             "type": "number",
-        
+            "default": 0.5
+          },
+          "localcompletion.max_tokens": {
+ 
