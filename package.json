@@ -98,4 +98,7 @@
           },
           "localcompletion.max_tokens": {
             "description": "Maximum number of tokens in the response",
-            
+            "type": "number",
+            "default": 300
+          },
+          "localcompleti
