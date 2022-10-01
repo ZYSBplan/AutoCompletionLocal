@@ -101,4 +101,5 @@
             "type": "number",
             "default": 300
           },
-          "localcompleti
+          "localcompletion.stop_sequences": {
+            "description": "Additional stop sequences (max.
