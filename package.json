@@ -105,4 +105,6 @@
             "description": "Additional stop sequences (max. 2)",
             "type": "array",
             "default": []
- 
+          },
+          "localcompletion.max_lines": {
+            "d
