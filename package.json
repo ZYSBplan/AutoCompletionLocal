@@ -108,4 +108,7 @@
           },
           "localcompletion.max_lines": {
             "description": "Maximum number of lines in the response",
-            "type":
+            "type": "number",
+            "default": 5
+          },
+          "localcomplet
