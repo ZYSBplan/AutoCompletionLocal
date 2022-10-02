@@ -102,4 +102,7 @@
             "default": 300
           },
           "localcompletion.stop_sequences": {
-            "description": "Additional stop sequences (max.
+            "description": "Additional stop sequences (max. 2)",
+            "type": "array",
+            "default": []
+ 
