@@ -112,4 +112,6 @@
             "default": 5
           },
           "localcompletion.reduce_calls": {
-            "description": "Reduce API calls with var
+            "description": "Reduce API calls with various strategies",
+            "type": "boolean",
+            "default": t
