@@ -111,4 +111,5 @@
             "type": "number",
             "default": 5
           },
-          "localcomplet
+          "localcompletion.reduce_calls": {
+            "description": "Reduce API calls with var
