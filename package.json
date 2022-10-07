@@ -122,4 +122,4 @@
             "default": false
           },
           "localcompletion.completion_timeout": {
-            "description": 
+            "description": "Minimum time between keystrokes (in ms) before sending a completion request (Reduces API
