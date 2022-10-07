@@ -121,3 +121,5 @@
             "type": "boolean",
             "default": false
           },
+          "localcompletion.completion_timeout": {
+            "description": 
