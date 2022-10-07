@@ -117,4 +117,7 @@
             "default": true
           },
           "localcompletion.skip_autocomplete_widget": {
-            "description": "Skip completion if autocomplete widget is active
+            "description": "Skip completion if autocomplete widget is active",
+            "type": "boolean",
+            "default": false
+          },
