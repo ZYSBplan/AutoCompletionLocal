@@ -126,4 +126,5 @@
             "type": "number",
             "default": 300
           },
-          "localcompletion.add_visible_
+          "localcompletion.add_visible_files": {
+            "description": "Add all visible files to compl
