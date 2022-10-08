@@ -124,4 +124,6 @@
           "localcompletion.completion_timeout": {
             "description": "Minimum time between keystrokes (in ms) before sending a completion request (Reduces API calls, which are closed immedietly after)",
             "type": "number",
-            
+            "default": 300
+          },
+          "localcompletion.add_visible_
