@@ -127,4 +127,6 @@
             "default": 300
           },
           "localcompletion.add_visible_files": {
-            "description": "Add all visible files to compl
+            "description": "Add all visible files to completion context",
+            "type": "boolean",
+            "defa
