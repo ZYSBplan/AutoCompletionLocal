@@ -132,4 +132,4 @@
             "default": true
           },
           "localcompletion.context_files": {
-            "descr
+            "description": "List of files to add to completion context (should ussually not 
