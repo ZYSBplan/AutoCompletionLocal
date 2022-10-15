@@ -132,4 +132,7 @@
             "default": true
           },
           "localcompletion.context_files": {
-            "description": "List of files to add to completion context (should ussually not 
+            "description": "List of files to add to completion context (should ussually not be edited manually)",
+            "type": "array",
+            "default": []
+          }
