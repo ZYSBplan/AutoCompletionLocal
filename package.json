@@ -135,4 +135,6 @@
             "description": "List of files to add to completion context (should ussually not be edited manually)",
             "type": "array",
             "default": []
-          }
+          },
+          "localcompletion.context_gitignore": {
+            "descrip
