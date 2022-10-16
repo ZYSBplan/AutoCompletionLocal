@@ -140,4 +140,10 @@
             "description": "Whether to ignore files in the gitignore for context generation",
             "type": "boolean",
             "default": true
-        
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "n
