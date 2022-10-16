@@ -137,4 +137,4 @@
             "default": []
           },
           "localcompletion.context_gitignore": {
-            "descrip
+            "description": "Whether to ignore files in the gitignore for context generatio
