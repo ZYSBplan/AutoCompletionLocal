@@ -1,2 +1,5 @@
 import {
-  InlineComp
+  InlineCompletionContext,
+  InlineCompletionItem,
+  InlineCompletionItemProvider,
+  Inli
