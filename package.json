@@ -173,4 +173,6 @@
   },
   "dependencies": {
     "openai": "^4.14.1",
-    "simple-g
+    "simple-git": "^3.22.0"
+  }
+}
