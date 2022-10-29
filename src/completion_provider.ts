@@ -2,4 +2,8 @@ import {
   InlineCompletionContext,
   InlineCompletionItem,
   InlineCompletionItemProvider,
-  Inli
+  InlineCompletionList,
+  TextDocument,
+  Position,
+  CancellationToken,
+  Provider
