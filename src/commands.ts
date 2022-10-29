@@ -38,3 +38,55 @@ function toggle() {
 }
 
 function regenerate() {
+  vscommands.executeCommand('editor.action.inlineSuggest.trigger');
+}
+
+function refreshContextView() {
+  ContextSelectionView.instance().refresh();
+}
+
+function applyContextGitignore() {
+  workspace
+    .getConfiguration('localcompletion')
+    .update('context_gitignore', true, ConfigurationTarget.Global)
+    .then(() =>
+      vscommands.executeCommand('localcompletion.refresh_context_view')
+    );
+  vscommands.executeCommand(
+    'setContext',
+    'localcompletion:useContextGitignore',
+    true
+  );
+}
+
+function disableContextGitignore() {
+  workspace
+    .getConfiguration('localcompletion')
+    .update('context_gitignore', false, ConfigurationTarget.Global)
+    .then(() =>
+      vscommands.executeCommand('localcompletion.refresh_context_view')
+    );
+  vscommands.executeCommand(
+    'setContext',
+    'localcompletion:useContextGitignore',
+    false
+  );
+}
+
+export const commands = [
+  vscommands.registerCommand('localcompletion.select_endpoint', setEndpoint),
+  vscommands.registerCommand('localcompletion.toggle', toggle),
+  vscommands.registerCommand('localcompletion.regenerate', regenerate),
+  vscommands.registerCommand(
+    'localcompletion.refresh_context_view',
+    refreshContextView
+  ),
+  vscommands.registerCommand(
+    'localcompletion.apply_context_gitignore',
+    applyContextGitignore
+  ),
+  vscommands.registerCommand(
+    'localcompletion.disable_context_gitignore',
+    disableContextGitignore
+  ),
+];
