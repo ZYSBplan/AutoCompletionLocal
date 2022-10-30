@@ -6,4 +6,8 @@ import {
   TextDocument,
   Position,
   CancellationToken,
-  Provider
+  ProviderResult,
+  Range,
+  workspace,
+  InlineCompletionTriggerKind,
+  window,
