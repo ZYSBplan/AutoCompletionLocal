@@ -14,4 +14,5 @@ import {
 } from 'vscode';
 
 import { OpenAI } from 'openai';
-import { St
+import { Stream } from 'openai/streaming';
+import { CodeCompletions, PromptBuilder } from './d
