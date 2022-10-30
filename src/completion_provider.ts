@@ -11,3 +11,7 @@ import {
   workspace,
   InlineCompletionTriggerKind,
   window,
+} from 'vscode';
+
+import { OpenAI } from 'openai';
+import { St
