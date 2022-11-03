@@ -19,4 +19,5 @@ import { CodeCompletions, PromptBuilder } from './data';
 import { trimLines, countLines, trimSpacesEnd } from './utility';
 import { CompletionStatusBarItem } from './ui/status_bar_item';
 
-export class LLMCo
+export class LLMCompletionProvider implements InlineCompletionItemProvider {
+  apiEn
