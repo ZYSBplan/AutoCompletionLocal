@@ -20,4 +20,8 @@ import { trimLines, countLines, trimSpacesEnd } from './utility';
 import { CompletionStatusBarItem } from './ui/status_bar_item';
 
 export class LLMCompletionProvider implements InlineCompletionItemProvider {
-  apiEn
+  apiEndpoint = 'http://localhost:5001/v1';
+  enabled = true;
+
+  //@ts-ignore
+  client: 
