@@ -24,4 +24,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
   enabled = true;
 
   //@ts-ignore
-  client: 
+  client: OpenAI;
+  onGoingStream: Stream<OpenAI.Completions.Completion> | undefined;
+  hasOnG
