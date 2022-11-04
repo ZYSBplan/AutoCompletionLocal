@@ -29,4 +29,8 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
   hasOnGoingStream = false;
 
   lastResponses: CodeCompletions;
-  statusBarItem: Comp
+  statusBarItem: CompletionStatusBarItem;
+
+  private static _instance: LLMCompletionProvider;
+
+  
