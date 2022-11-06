@@ -33,4 +33,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
 
   private static _instance: LLMCompletionProvider;
 
-  
+  /** Get singleton instance of this class */
+  static instance() {
