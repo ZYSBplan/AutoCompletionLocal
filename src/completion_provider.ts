@@ -38,4 +38,11 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     if (!LLMCompletionProvider._instance) {
       //LLMCompletionProvider._instance = new LLMCompletionProvider();
       throw Error(
-        'Tried to access LLMCompletionProvider Instance before buildi
+        'Tried to access LLMCompletionProvider Instance before building'
+      );
+    }
+
+    return LLMCompletionProvider._instance;
+  }
+
+  /** Build a 
