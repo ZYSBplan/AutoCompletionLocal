@@ -45,4 +45,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     return LLMCompletionProvider._instance;
   }
 
-  /** Build a 
+  /** Build a new instance of this class */
+  static build() {
+    LLMCompletionProvi
