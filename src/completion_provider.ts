@@ -53,4 +53,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
 
   constructor() {
     this.updateSettings();
-    
+    this.lastResponses = new CodeCompletions();
+    this.statusBarItem = new
