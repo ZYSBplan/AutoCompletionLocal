@@ -58,4 +58,7 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
   }
 
   /** Update variables which depend on extension settings. Should be called if the settings are changed */
-  updateSetting
+  updateSettings() {
+    this.enabled = workspace
+      .getConfiguration('editor')
+      .get(
