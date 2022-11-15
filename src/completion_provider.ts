@@ -57,4 +57,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     this.statusBarItem = new CompletionStatusBarItem();
   }
 
-  /** Update variables which depend 
+  /** Update variables which depend on extension settings. Should be called if the settings are changed */
+  updateSetting
