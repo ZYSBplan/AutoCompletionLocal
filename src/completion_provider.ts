@@ -61,4 +61,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
   updateSettings() {
     this.enabled = workspace
       .getConfiguration('editor')
-      .get(
+      .get('inlineSuggest.enabled', true);
+    this.apiEndpoint = workspac
