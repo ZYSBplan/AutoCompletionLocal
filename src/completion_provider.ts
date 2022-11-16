@@ -64,4 +64,7 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       .get('inlineSuggest.enabled', true);
     this.apiEndpoint = workspace
       .getConfiguration('localcompletion')
-      .get('active_endpoi
+      .get('active_endpoint', this.apiEndpoint);
+
+    this.client = new OpenAI({
+      a
