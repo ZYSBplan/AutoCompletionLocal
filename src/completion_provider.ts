@@ -67,4 +67,9 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       .get('active_endpoint', this.apiEndpoint);
 
     this.client = new OpenAI({
-      a
+      apiKey: 'NONE',
+      baseURL: this.apiEndpoint,
+    });
+  }
+
+  /** Async
