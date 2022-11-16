@@ -72,4 +72,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     });
   }
 
-  /** Async
+  /** Async sleep */
+  async completionTimeout(): Promise<unknown> {
+    const ms = w
