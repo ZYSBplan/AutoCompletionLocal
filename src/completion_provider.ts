@@ -76,4 +76,10 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
   async completionTimeout(): Promise<unknown> {
     const ms = workspace
       .getConfiguration('localcompletion')
-      .get('completion_timeout'
+      .get('completion_timeout', 0);
+
+    if (ms <= 0) {
+      return 0;
+    }
+
+    return await new Promise((r
