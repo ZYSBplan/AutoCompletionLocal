@@ -86,4 +86,4 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
   }
 
   /** Execute completion */
- 
+  private async getCompletion(prompt: string, stop: string[] = 
