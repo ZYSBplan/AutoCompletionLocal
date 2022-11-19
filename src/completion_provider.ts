@@ -82,4 +82,8 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       return 0;
     }
 
-    return await new Promise((r
+    return await new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  /** Execute completion */
+ 
