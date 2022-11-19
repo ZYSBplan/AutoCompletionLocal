@@ -86,4 +86,7 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
   }
 
   /** Execute completion */
-  private async getCompletion(prompt: string, stop: string[] = 
+  private async getCompletion(prompt: string, stop: string[] = []) {
+    return await this.client.completions.create({
+      model: 'NONE',
+   
