@@ -89,4 +89,7 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
   private async getCompletion(prompt: string, stop: string[] = []) {
     return await this.client.completions.create({
       model: 'NONE',
-   
+      prompt,
+      stream: true,
+      temperature: workspace
+    
