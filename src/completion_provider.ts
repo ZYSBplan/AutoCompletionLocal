@@ -92,4 +92,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       prompt,
       stream: true,
       temperature: workspace
-    
+        .getConfiguration('localcompletion')
+        .get('temperature')
