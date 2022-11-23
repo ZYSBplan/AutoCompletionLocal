@@ -96,4 +96,8 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
         .get('temperature'),
       // eslint-disable-next-line @typescript-eslint/naming-convention
       max_tokens: workspace
-        .getConfiguration('lo
+        .getConfiguration('localcompletion')
+        .get('max_tokens'),
+      stop: [
+        '\n\n\n',
+   
