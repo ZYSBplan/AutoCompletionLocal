@@ -100,4 +100,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
         .get('max_tokens'),
       stop: [
         '\n\n\n',
-   
+        ...stop,
+        ...workspace
+          .getConfiguration('localcomple
