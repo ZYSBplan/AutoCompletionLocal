@@ -102,4 +102,10 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
         '\n\n\n',
         ...stop,
         ...workspace
-          .getConfiguration('localcomple
+          .getConfiguration('localcompletion')
+          .get('stop_sequences', []),
+      ],
+    });
+  }
+
+  /** Check if i
