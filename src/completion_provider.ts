@@ -108,4 +108,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     });
   }
 
-  /** Check if i
+  /** Check if inline completion should be skipped */
+  private shouldSkip(
+    p
