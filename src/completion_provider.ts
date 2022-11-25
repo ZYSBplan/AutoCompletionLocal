@@ -112,4 +112,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
   private shouldSkip(
     prompt: string,
     context: InlineCompletionContext,
- 
+    reduceCalls: boolean
+  ) {
+    // Skip if autocomplete widget
