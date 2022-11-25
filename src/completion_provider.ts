@@ -114,4 +114,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     context: InlineCompletionContext,
     reduceCalls: boolean
   ) {
-    // Skip if autocomplete widget
+    // Skip if autocomplete widget is visible
+    if (
+      context.selectedCompletionInfo !== undefined 
