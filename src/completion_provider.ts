@@ -110,4 +110,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
 
   /** Check if inline completion should be skipped */
   private shouldSkip(
-    p
+    prompt: string,
+    context: InlineCompletionContext,
+ 
