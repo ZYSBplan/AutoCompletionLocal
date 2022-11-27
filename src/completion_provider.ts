@@ -123,4 +123,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     ) {
       console.debug('Skip completion because Autocomplete widget is visible');
       console.debug(
-        work
+        workspace
+          .getConfiguration('localcompletion')
+          .get('skip_autocomplete_widg
