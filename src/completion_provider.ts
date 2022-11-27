@@ -116,4 +116,7 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
   ) {
     // Skip if autocomplete widget is visible
     if (
-      context.selectedCompletionInfo !== undefined 
+      context.selectedCompletionInfo !== undefined &&
+      workspace
+        .getConfiguration('localcompletion')
+       
