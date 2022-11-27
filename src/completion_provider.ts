@@ -119,4 +119,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       context.selectedCompletionInfo !== undefined &&
       workspace
         .getConfiguration('localcompletion')
-       
+        .get('skip_autocomplete_widget')
+    ) {
+      console.debug('Skip comple
