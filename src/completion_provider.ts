@@ -130,4 +130,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       return true;
     }
 
-    // Only start auto
+    // Only start autocompletion on specific symbols for reduced calls
+    if (reduceCalls) {
