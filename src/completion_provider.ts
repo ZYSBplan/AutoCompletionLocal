@@ -125,4 +125,9 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       console.debug(
         workspace
           .getConfiguration('localcompletion')
-          .get('skip_autocomplete_widg
+          .get('skip_autocomplete_widget')
+      );
+      return true;
+    }
+
+    // Only start auto
