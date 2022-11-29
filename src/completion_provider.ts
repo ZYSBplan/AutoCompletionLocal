@@ -135,4 +135,9 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       const regex = new RegExp('[a-zA-Z]');
       if (regex.test(prompt.at(-1) || '')) {
         console.debug('Skip completion to reduce calls');
-      
+        return true;
+      }
+    }
+  }
+
+  /** Check if inline completion should be stoppe
