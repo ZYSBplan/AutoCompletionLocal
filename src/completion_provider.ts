@@ -133,4 +133,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     // Only start autocompletion on specific symbols for reduced calls
     if (reduceCalls) {
       const regex = new RegExp('[a-zA-Z]');
-      if (regex.test(prompt.at(-
+      if (regex.test(prompt.at(-1) || '')) {
+        console.debug('Skip completion to reduce calls');
+      
