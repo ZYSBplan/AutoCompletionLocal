@@ -140,4 +140,8 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     }
   }
 
-  /** Check if inline completion should be stoppe
+  /** Check if inline completion should be stopped */
+  private shouldStop(
+    response: string,
+    maxLines: number
+ 
