@@ -144,4 +144,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
   private shouldStop(
     response: string,
     maxLines: number
- 
+  ): { shouldStop: boolean; trimmedResponse: string } {
+    if (countLines(re
