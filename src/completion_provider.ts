@@ -149,4 +149,8 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       return { shouldStop: false, trimmedResponse: '' };
     }
 
-    const trimmedResponse = trimLines(response,
+    const trimmedResponse = trimLines(response, maxLines);
+    return { shouldStop: true, trimmedResponse };
+  }
+
+  /**
