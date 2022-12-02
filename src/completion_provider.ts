@@ -153,4 +153,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     return { shouldStop: true, trimmedResponse };
   }
 
-  /**
+  /** Stop running LLM completion */
+  private stopOngoingStream() {
+    if (!thi
