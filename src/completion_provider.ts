@@ -155,4 +155,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
 
   /** Stop running LLM completion */
   private stopOngoingStream() {
-    if (!thi
+    if (!this.onGoingStream?.controller.signal.aborted) {
+      console.debug('Completion 
