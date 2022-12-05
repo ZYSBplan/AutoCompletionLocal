@@ -159,4 +159,9 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       console.debug('Completion request canceled');
       // console.trace('Completion request canceled!', this.onGoingStream);
       this.hasOnGoingStream = false;
-    
+      this.onGoingStream?.controller.abort();
+    }
+  }
+
+  /**
+   * Analyze document and
