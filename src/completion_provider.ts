@@ -164,4 +164,4 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
   }
 
   /**
-   * Analyze document and
+   * Analyze document and generate promt, lineEnding (as stop sequence) and check if single li
