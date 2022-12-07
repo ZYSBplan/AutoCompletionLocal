@@ -167,4 +167,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
    * Analyze document and generate promt, lineEnding (as stop sequence) and check if single line completion should be used
    */
   analyzeDocument(
-    documen
+    document: TextDocument,
+    position: Position
+  ): [string, string | null
