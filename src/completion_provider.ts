@@ -171,4 +171,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     position: Position
   ): [string, string | null, boolean] {
     const prompt = document.getText(
-      new Range(0, 0,
+      new Range(0, 0, position.line, position.character)
+    );
+    let lineEnding: st
