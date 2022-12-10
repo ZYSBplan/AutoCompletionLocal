@@ -169,4 +169,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
   analyzeDocument(
     document: TextDocument,
     position: Position
-  ): [string, string | null
+  ): [string, string | null, boolean] {
+    const prompt = document.getText(
+      new Range(0, 0,
