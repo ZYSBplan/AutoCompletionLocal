@@ -174,4 +174,7 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       new Range(0, 0, position.line, position.character)
     );
     let lineEnding: string | null = document.getText(
-      new Range(position.line, position.ch
+      new Range(position.line, position.character, position.line, Infinity)
+    );
+
+    // Check line ending for only '' or '\
