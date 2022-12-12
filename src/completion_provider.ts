@@ -177,4 +177,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       new Range(position.line, position.character, position.line, Infinity)
     );
 
-    // Check line ending for only '' or '\
+    // Check line ending for only '' or '\n' to trigger inline completion
+    const isSingleLineCompletion = lineEn
