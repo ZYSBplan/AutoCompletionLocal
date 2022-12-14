@@ -178,4 +178,8 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     );
 
     // Check line ending for only '' or '\n' to trigger inline completion
-    const isSingleLineCompletion = lineEn
+    const isSingleLineCompletion = lineEnding.trim() !== '';
+
+    if (!isSingleLineCompletion) {
+      lineEnding = document.getText(
+    
