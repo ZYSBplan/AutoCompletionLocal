@@ -182,4 +182,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
 
     if (!isSingleLineCompletion) {
       lineEnding = document.getText(
-    
+        new Range(position.line + 1, 0, position.line + 1, Infinity)
+      );
+    }
