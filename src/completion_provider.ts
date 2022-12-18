@@ -185,3 +185,7 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
         new Range(position.line + 1, 0, position.line + 1, Infinity)
       );
     }
+
+    lineEnding = lineEnding === '' ? null : lineEnding;
+
+    return
