@@ -188,4 +188,7 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
 
     lineEnding = lineEnding === '' ? null : lineEnding;
 
-    return
+    return [prompt, lineEnding, isSingleLineCompletion];
+  }
+
+  async provideInlineComple
