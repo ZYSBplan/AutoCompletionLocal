@@ -191,4 +191,7 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     return [prompt, lineEnding, isSingleLineCompletion];
   }
 
-  async provideInlineComple
+  async provideInlineCompletionItems(
+    document: TextDocument,
+    position: Position,
+   
