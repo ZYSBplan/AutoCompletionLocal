@@ -194,4 +194,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
   async provideInlineCompletionItems(
     document: TextDocument,
     position: Position,
+    context: InlineCompletionContext,
+    token: CancellationToken
    
