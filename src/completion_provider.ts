@@ -196,4 +196,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     position: Position,
     context: InlineCompletionContext,
     token: CancellationToken
-   
+    //@ts-ignore
+    // because ASYNC and PROMISE
+  ): ProviderRes
