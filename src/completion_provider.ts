@@ -199,4 +199,8 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     //@ts-ignore
     // because ASYNC and PROMISE
   ): ProviderResult<InlineCompletionItem[] | InlineCompletionList> {
-    const reduceCalls = w
+    const reduceCalls = workspace
+      .getConfiguration('localcompletion')
+      .get('reduce_calls', true);
+
+   
