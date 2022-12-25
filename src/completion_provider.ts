@@ -198,4 +198,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     token: CancellationToken
     //@ts-ignore
     // because ASYNC and PROMISE
-  ): ProviderRes
+  ): ProviderResult<InlineCompletionItem[] | InlineCompletionList> {
+    const reduceCalls = w
