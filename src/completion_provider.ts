@@ -204,4 +204,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       .get('reduce_calls', true);
 
     const promptBuilder = new PromptBuilder(document, position);
-    const
+    const { activeFile, lineEnding, isSingleLineCompletion } =
+      promptBuilder.getFileInf
