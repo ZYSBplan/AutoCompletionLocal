@@ -203,4 +203,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       .getConfiguration('localcompletion')
       .get('reduce_calls', true);
 
-   
+    const promptBuilder = new PromptBuilder(document, position);
+    const
