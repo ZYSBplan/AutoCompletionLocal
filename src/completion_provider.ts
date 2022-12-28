@@ -210,4 +210,4 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     if (context.triggerKind === InlineCompletionTriggerKind.Automatic) {
       // Skip if inline suggestions are disabled
       if (
-   
+        !workspace.getConfiguration('editor').get('inlineSuggest.enabled', 
