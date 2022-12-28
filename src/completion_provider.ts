@@ -205,4 +205,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
 
     const promptBuilder = new PromptBuilder(document, position);
     const { activeFile, lineEnding, isSingleLineCompletion } =
-      promptBuilder.getFileInf
+      promptBuilder.getFileInfo();
+
+    if (context.triggerKind === InlineCompletionTriggerKind.Autom
