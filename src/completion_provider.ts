@@ -207,4 +207,7 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     const { activeFile, lineEnding, isSingleLineCompletion } =
       promptBuilder.getFileInfo();
 
-    if (context.triggerKind === InlineCompletionTriggerKind.Autom
+    if (context.triggerKind === InlineCompletionTriggerKind.Automatic) {
+      // Skip if inline suggestions are disabled
+      if (
+   
