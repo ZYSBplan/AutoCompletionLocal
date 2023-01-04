@@ -216,4 +216,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       }
 
       // Check previous completions
-      const previousResponses = this.lastResponses.ge
+      const previousResponses = this.lastResponses.get(activeFile);
+      if (previousResponses && !isSingleLineCompletion) {
