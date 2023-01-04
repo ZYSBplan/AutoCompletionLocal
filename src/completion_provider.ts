@@ -219,4 +219,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       const previousResponses = this.lastResponses.get(activeFile);
       if (previousResponses && !isSingleLineCompletion) {
         return new InlineCompletionList(
-          prev
+          previousResponses.map(
+            (res) =>
+              new Inl
