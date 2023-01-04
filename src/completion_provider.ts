@@ -215,4 +215,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
         return null;
       }
 
-      // Check previous 
+      // Check previous completions
+      const previousResponses = this.lastResponses.ge
