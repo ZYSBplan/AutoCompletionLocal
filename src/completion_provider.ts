@@ -221,4 +221,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
         return new InlineCompletionList(
           previousResponses.map(
             (res) =>
-              new Inl
+              new InlineCompletionItem(
+                res,
+                new Range(
