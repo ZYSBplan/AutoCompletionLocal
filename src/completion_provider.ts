@@ -225,3 +225,8 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
                 res,
                 new Range(position.line, 0, position.line, position.character)
               )
+          )
+        );
+      }
+
+      if (this.shouldSkip(activeFile, c
