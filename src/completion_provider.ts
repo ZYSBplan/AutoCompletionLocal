@@ -223,4 +223,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
             (res) =>
               new InlineCompletionItem(
                 res,
-                new Range(
+                new Range(position.line, 0, position.line, position.character)
+              )
