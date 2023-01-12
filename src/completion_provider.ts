@@ -236,4 +236,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
 
     // Get prompt depending on the configuration
     const prompt = workspace
-      .getConfiguration(
+      .getConfiguration('localcompletion')
+      .get('add_visible_files', false)
+   
