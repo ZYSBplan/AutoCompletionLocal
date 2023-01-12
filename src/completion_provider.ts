@@ -229,4 +229,9 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
         );
       }
 
-      if (this.shouldSkip(activeFile, c
+      if (this.shouldSkip(activeFile, context, reduceCalls)) {
+        return null;
+      }
+    }
+
+    // Get pro
