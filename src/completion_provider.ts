@@ -234,4 +234,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       }
     }
 
-    // Get pro
+    // Get prompt depending on the configuration
+    const prompt = workspace
+      .getConfiguration(
