@@ -245,4 +245,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     const { trimmed, whitespace } = trimSpacesEnd(prompt);
     const trimmedPrompt = trimmed;
 
-    await this.com
+    await this.completionTimeout();
+    if (token?.isCancellationRequested) {
+      ret
