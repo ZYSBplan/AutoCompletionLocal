@@ -241,4 +241,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       ? await promptBuilder.getPrompt()
       : activeFile;
 
-    // Trim spaces (Impr
+    // Trim spaces (Improves performance on some models)
+    const { trimmed, whitespace } 
