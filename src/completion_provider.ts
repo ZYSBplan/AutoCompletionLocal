@@ -238,4 +238,7 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     const prompt = workspace
       .getConfiguration('localcompletion')
       .get('add_visible_files', false)
-   
+      ? await promptBuilder.getPrompt()
+      : activeFile;
+
+    // Trim spaces (Impr
