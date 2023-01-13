@@ -242,4 +242,7 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       : activeFile;
 
     // Trim spaces (Improves performance on some models)
-    const { trimmed, whitespace } 
+    const { trimmed, whitespace } = trimSpacesEnd(prompt);
+    const trimmedPrompt = trimmed;
+
+    await this.com
