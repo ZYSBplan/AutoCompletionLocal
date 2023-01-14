@@ -255,4 +255,8 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     this.stopOngoingStream();
     this.hasOnGoingStream = true;
     this.onGoingStream = await this.getCompletion(trimmedPrompt, [
-      ...(isSingleLineComplet
+      ...(isSingleLineCompletion ? ['\n'] : []),
+      ...(lineEnding ? [lineEnding] : []),
+    ]);
+
+    //
