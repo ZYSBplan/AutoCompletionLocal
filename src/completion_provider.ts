@@ -247,4 +247,9 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
 
     await this.completionTimeout();
     if (token?.isCancellationRequested) {
-      ret
+      return null;
+    }
+
+    this.statusBarItem.setActive();
+
+    this.stopOngoingStre
