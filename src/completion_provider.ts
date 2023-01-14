@@ -252,4 +252,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
 
     this.statusBarItem.setActive();
 
-    this.stopOngoingStre
+    this.stopOngoingStream();
+    this.hasOnGoingStream = true;
+    this.onGoingStream = a
