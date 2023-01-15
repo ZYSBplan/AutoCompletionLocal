@@ -259,4 +259,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       ...(lineEnding ? [lineEnding] : []),
     ]);
 
-    //
+    // Needs to be called that way. Otherwise `this` is sometimes `undefined`
+    tok
