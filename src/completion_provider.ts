@@ -262,4 +262,5 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     // Needs to be called that way. Otherwise `this` is sometimes `undefined`
     token.onCancellationRequested(() => this.stopOngoingStream());
 
-    if (
+    if (token?.isCancellationRequested) {
+      this.stopOngoingStream()
