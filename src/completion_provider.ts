@@ -263,4 +263,9 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     token.onCancellationRequested(() => this.stopOngoingStream());
 
     if (token?.isCancellationRequested) {
-      this.stopOngoingStream()
+      this.stopOngoingStream();
+      return null;
+    }
+
+    let completion = '';
+    const ma
