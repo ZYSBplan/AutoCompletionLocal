@@ -270,4 +270,7 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     let completion = '';
     const maxLines = workspace
       .getConfiguration('localcompletion')
-     
+      .get('max_lines', 5);
+
+    for await (const part of this.onGoingStream) {
+   
