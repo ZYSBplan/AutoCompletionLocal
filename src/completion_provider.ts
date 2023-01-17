@@ -268,4 +268,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     }
 
     let completion = '';
-    const ma
+    const maxLines = workspace
+      .getConfiguration('localcompletion')
+     
