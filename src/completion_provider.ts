@@ -278,4 +278,7 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       const { shouldStop, trimmedResponse } = this.shouldStop(
         completion,
         maxLines
-  
+      );
+      if (shouldStop) {
+        // Stop completion
+        this.
