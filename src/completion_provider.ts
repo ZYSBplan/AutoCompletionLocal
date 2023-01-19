@@ -281,4 +281,9 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
       );
       if (shouldStop) {
         // Stop completion
-        this.
+        this.stopOngoingStream();
+
+        completion = trimmedResponse;
+        break;
+      }
+    
