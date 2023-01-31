@@ -289,4 +289,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     }
     this.hasOnGoingStream = false;
 
-    // Compare/Remove whitespaces from completion 
+    // Compare/Remove whitespaces from completion start
+    if (whitespace !== '' && completion.startsWith(whitespace)) {
+   
