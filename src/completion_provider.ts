@@ -291,4 +291,4 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
 
     // Compare/Remove whitespaces from completion start
     if (whitespace !== '' && completion.startsWith(whitespace)) {
-   
+      completion = completion.slice(whitespace.length, completio
