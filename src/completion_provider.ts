@@ -295,4 +295,6 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     }
 
     this.lastResponses.add(activeFile, completion);
-    this.
+    this.statusBarItem.setInactive();
+
+    return new InlineCompletionLis
