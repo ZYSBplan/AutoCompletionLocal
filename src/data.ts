@@ -3,4 +3,7 @@ import { getContextFiles, removeContextFile } from './utility';
 
 export class CodeCompletions {
   completions: [string, string][] = [];
-  maxCompletion
+  maxCompletions = 10;
+
+  constructor(maxCompletions: number = 10) {
+    this.maxC
