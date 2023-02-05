@@ -6,4 +6,8 @@ export class CodeCompletions {
   maxCompletions = 10;
 
   constructor(maxCompletions: number = 10) {
-    this.maxC
+    this.maxCompletions = maxCompletions;
+  }
+
+  private lastLine(text: string) {
+    return text.
