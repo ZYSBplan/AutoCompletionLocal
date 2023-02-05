@@ -10,4 +10,8 @@ export class CodeCompletions {
   }
 
   private lastLine(text: string) {
-    return text.
+    return text.split('\n').at(-1) || '';
+  }
+
+  /** Add new completion to history.
+   *
