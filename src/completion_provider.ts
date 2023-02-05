@@ -300,4 +300,8 @@ export class LLMCompletionProvider implements InlineCompletionItemProvider {
     return new InlineCompletionList([
       new InlineCompletionItem(
         activeFile + completion,
-        new Range(0
+        new Range(0, 0, position.line, position.character)
+      ),
+    ]);
+  }
+}
