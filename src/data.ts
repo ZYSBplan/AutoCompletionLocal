@@ -20,4 +20,8 @@ export class CodeCompletions {
     this.completions.unshift([input, completion]);
 
     if (this.completions.length > this.maxCompletions) {
-      thi
+      this.completions.pop();
+    }
+  }
+
+  /** Get prediction from history bas
