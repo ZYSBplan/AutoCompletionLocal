@@ -17,4 +17,7 @@ export class CodeCompletions {
    *  Remove items from history if `maxCompletions` is exceeded
    */
   public add(input: string, completion: string) {
-    this.completions.unshift([input, completion])
+    this.completions.unshift([input, completion]);
+
+    if (this.completions.length > this.maxCompletions) {
+      thi
