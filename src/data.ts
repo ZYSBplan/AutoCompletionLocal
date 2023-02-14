@@ -24,4 +24,6 @@ export class CodeCompletions {
     }
   }
 
-  /** Get prediction from history bas
+  /** Get prediction from history based on the prompt
+   *
+   * *Includes the complete line! It does not start fro
