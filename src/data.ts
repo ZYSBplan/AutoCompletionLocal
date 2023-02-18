@@ -26,4 +26,7 @@ export class CodeCompletions {
 
   /** Get prediction from history based on the prompt
    *
-   * *Includes the complete line! It does not start fro
+   * *Includes the complete line! It does not start from the cursor position*
+   */
+  public get(prompt: string): string[] | null {
+    if (t
