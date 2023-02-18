@@ -37,4 +37,5 @@ export class CodeCompletions {
       return null;
     }
 
-    const lastPrediciton = this.c
+    const lastPrediciton = this.completions[0];
+    const lastCompletePrediction = lastPredicito
