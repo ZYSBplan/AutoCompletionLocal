@@ -29,4 +29,8 @@ export class CodeCompletions {
    * *Includes the complete line! It does not start from the cursor position*
    */
   public get(prompt: string): string[] | null {
-    if (t
+    if (this.completions.length <= 0) {
+      return null;
+    }
+
+    if (this.last
