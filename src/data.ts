@@ -33,4 +33,8 @@ export class CodeCompletions {
       return null;
     }
 
-    if (this.last
+    if (this.lastLine(prompt).trim() === '') {
+      return null;
+    }
+
+    const lastPrediciton = this.c
