@@ -40,4 +40,6 @@ export class CodeCompletions {
     const lastPrediciton = this.completions[0];
     const lastCompletePrediction = lastPrediciton[0] + lastPrediciton[1];
     let completePrediction = null;
-   
+    if (
+      lastCompletePrediction.includes(prompt) &&
+      !lastCompletePredic
