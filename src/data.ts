@@ -49,4 +49,7 @@ export class CodeCompletions {
     }
 
     let predictions = this.completions
-      .map((completion) => this.lastLine(co
+      .map((completion) => this.lastLine(completion[0]) + completion[1])
+      .filter(
+        (prediction) =>
+    
