@@ -42,4 +42,6 @@ export class CodeCompletions {
     let completePrediction = null;
     if (
       lastCompletePrediction.includes(prompt) &&
-      !lastCompletePredic
+      !lastCompletePrediction.endsWith(prompt)
+    ) {
+      completePrediction = this.lastLine(las
