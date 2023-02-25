@@ -53,4 +53,8 @@ export class CodeCompletions {
       .filter(
         (prediction) =>
           prediction.includes(this.lastLine(prompt)) &&
-          !prediction.endsWith(
+          !prediction.endsWith(this.lastLine(prompt))
+      );
+
+    if (completePrediction) {
+  
