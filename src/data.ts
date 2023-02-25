@@ -44,4 +44,5 @@ export class CodeCompletions {
       lastCompletePrediction.includes(prompt) &&
       !lastCompletePrediction.endsWith(prompt)
     ) {
-      completePrediction = this.lastLine(las
+      completePrediction = this.lastLine(lastPrediciton[0]) + lastPrediciton[1];
+      console.de
