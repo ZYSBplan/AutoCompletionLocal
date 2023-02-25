@@ -52,4 +52,5 @@ export class CodeCompletions {
       .map((completion) => this.lastLine(completion[0]) + completion[1])
       .filter(
         (prediction) =>
-    
+          prediction.includes(this.lastLine(prompt)) &&
+          !prediction.endsWith(
