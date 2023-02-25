@@ -46,4 +46,7 @@ export class CodeCompletions {
     ) {
       completePrediction = this.lastLine(lastPrediciton[0]) + lastPrediciton[1];
       console.debug('Found complete prediciton', completePrediction);
-   
+    }
+
+    let predictions = this.completions
+      .map((completion) => this.lastLine(co
