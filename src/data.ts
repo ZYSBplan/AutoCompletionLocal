@@ -57,4 +57,5 @@ export class CodeCompletions {
       );
 
     if (completePrediction) {
-  
+      predictions = [completePrediction, ...predictions];
+    
