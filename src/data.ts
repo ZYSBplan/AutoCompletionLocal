@@ -58,4 +58,10 @@ export class CodeCompletions {
 
     if (completePrediction) {
       predictions = [completePrediction, ...predictions];
-    
+    }
+
+    if (predictions.length === 0) {
+      return null;
+    }
+
+    console.d
