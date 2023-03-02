@@ -64,4 +64,9 @@ export class CodeCompletions {
       return null;
     }
 
-    console.d
+    console.debug('Found partial predictions');
+
+    return predictions;
+  }
+
+  /** Ret
