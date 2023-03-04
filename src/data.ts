@@ -81,4 +81,4 @@ export class CodeCompletions {
 }
 
 export class PromptBuilder {
-  priv
+  private fileSeperatorTemplate = '---------- ${path} ----------'
