@@ -70,4 +70,5 @@ export class CodeCompletions {
   }
 
   /** Return complete completion history (input and completion combined) */
-  public g
+  public getAll(): string[] {
+    return this.completions.map((prediction) => predic
