@@ -69,4 +69,5 @@ export class CodeCompletions {
     return predictions;
   }
 
-  /** Ret
+  /** Return complete completion history (input and completion combined) */
+  public g
