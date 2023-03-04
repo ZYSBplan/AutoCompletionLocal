@@ -81,4 +81,8 @@ export class CodeCompletions {
 }
 
 export class PromptBuilder {
-  private fileSeperatorTemplate = '---------- ${path} ----------'
+  private fileSeperatorTemplate = '---------- ${path} ----------';
+
+  private activeFile: string;
+  private activeFilePath: string;
+  private 
