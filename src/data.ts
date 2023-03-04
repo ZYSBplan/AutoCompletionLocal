@@ -71,4 +71,8 @@ export class CodeCompletions {
 
   /** Return complete completion history (input and completion combined) */
   public getAll(): string[] {
-    return this.completions.map((prediction) => predic
+    return this.completions.map((prediction) => prediction[0] + prediction[1]);
+  }
+
+  /** Clear history */
+  public c
