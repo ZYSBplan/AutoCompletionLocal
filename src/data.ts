@@ -75,4 +75,10 @@ export class CodeCompletions {
   }
 
   /** Clear history */
-  public c
+  public clear() {
+    this.completions = [];
+  }
+}
+
+export class PromptBuilder {
+  priv
