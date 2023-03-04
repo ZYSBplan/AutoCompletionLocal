@@ -85,4 +85,7 @@ export class PromptBuilder {
 
   private activeFile: string;
   private activeFilePath: string;
-  private 
+  private lineEnding: string | null;
+  private isSingleLineCompletions: boolean;
+
+  const
