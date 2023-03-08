@@ -91,3 +91,6 @@ export class PromptBuilder {
   constructor(document: TextDocument, position: Position) {
     this.activeFile = document.getText(
       new Range(0, 0, position.line, position.character)
+    );
+    this.activeFilePath = document.uri.fsPath;
+    const lineInfo = this.createLine
