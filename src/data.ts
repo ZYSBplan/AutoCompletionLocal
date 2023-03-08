@@ -89,4 +89,5 @@ export class PromptBuilder {
   private isSingleLineCompletions: boolean;
 
   constructor(document: TextDocument, position: Position) {
-    this.activeFile =
+    this.activeFile = document.getText(
+      new Range(0, 0, position.line, position.character)
