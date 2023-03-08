@@ -88,4 +88,5 @@ export class PromptBuilder {
   private lineEnding: string | null;
   private isSingleLineCompletions: boolean;
 
-  const
+  constructor(document: TextDocument, position: Position) {
+    this.activeFile =
