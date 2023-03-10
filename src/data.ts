@@ -93,4 +93,5 @@ export class PromptBuilder {
       new Range(0, 0, position.line, position.character)
     );
     this.activeFilePath = document.uri.fsPath;
-    const lineInfo = this.createLine
+    const lineInfo = this.createLineEnding(document, position);
+    this.lineEnding = lineInfo.lineEnding;
