@@ -100,4 +100,7 @@ export class PromptBuilder {
 
   private createLineEnding(document: TextDocument, position: Position) {
     let lineEnding: string | null = document.getText(
-      new Range(position.line,
+      new Range(position.line, position.character, position.line, Infinity)
+    );
+
+    // Check line en
