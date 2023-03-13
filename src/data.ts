@@ -96,4 +96,7 @@ export class PromptBuilder {
     const lineInfo = this.createLineEnding(document, position);
     this.lineEnding = lineInfo.lineEnding;
     this.isSingleLineCompletions = lineInfo.isSingleLineCompletion;
- 
+  }
+
+  private createLineEnding(document: TextDocument, position: Position) {
+    let 
