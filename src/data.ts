@@ -99,4 +99,5 @@ export class PromptBuilder {
   }
 
   private createLineEnding(document: TextDocument, position: Position) {
-    let 
+    let lineEnding: string | null = document.getText(
+      new Range(position.line,
