@@ -104,4 +104,7 @@ export class PromptBuilder {
     );
 
     // Check line ending for only '' or '\n' to trigger inline completion
-    const isSingleLineCom
+    const isSingleLineCompletion = lineEnding.trim() !== '';
+
+    if (!isSingleLineCompletion) {
+      lineEnding = do
