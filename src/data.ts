@@ -103,4 +103,5 @@ export class PromptBuilder {
       new Range(position.line, position.character, position.line, Infinity)
     );
 
-    // Check line en
+    // Check line ending for only '' or '\n' to trigger inline completion
+    const isSingleLineCom
