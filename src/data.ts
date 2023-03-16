@@ -107,4 +107,5 @@ export class PromptBuilder {
     const isSingleLineCompletion = lineEnding.trim() !== '';
 
     if (!isSingleLineCompletion) {
-      lineEnding = do
+      lineEnding = document.getText(
+        new Range(position.line + 1, 0, position.line +
