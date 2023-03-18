@@ -108,4 +108,9 @@ export class PromptBuilder {
 
     if (!isSingleLineCompletion) {
       lineEnding = document.getText(
-        new Range(position.line + 1, 0, position.line +
+        new Range(position.line + 1, 0, position.line + 1, Infinity)
+      );
+    }
+
+    return {
+      lineEnding: lineEnding ===
