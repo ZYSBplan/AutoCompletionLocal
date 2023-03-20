@@ -113,4 +113,9 @@ export class PromptBuilder {
     }
 
     return {
-      lineEnding: lineEnding ===
+      lineEnding: lineEnding === '' ? null : lineEnding,
+      isSingleLineCompletion,
+    };
+  }
+
+  private getVis
