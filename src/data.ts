@@ -118,4 +118,7 @@ export class PromptBuilder {
     };
   }
 
-  private getVis
+  private getVisibleFiles() {
+    const visibleFiles = [];
+
+    for (const editor of window.visibleTextE
