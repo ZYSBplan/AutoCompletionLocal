@@ -126,4 +126,6 @@ export class PromptBuilder {
         continue;
       }
 
-      visibl
+      visibleFiles.push({
+        content: editor.document.getText(),
+        pat
