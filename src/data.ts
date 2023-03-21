@@ -128,4 +128,8 @@ export class PromptBuilder {
 
       visibleFiles.push({
         content: editor.document.getText(),
-        pat
+        path: editor.document.uri.fsPath,
+      });
+    }
+
+    return visibleF
