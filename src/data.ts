@@ -122,4 +122,8 @@ export class PromptBuilder {
     const visibleFiles = [];
 
     for (const editor of window.visibleTextEditors) {
-      if (editor.document.uri.fsPath ===
+      if (editor.document.uri.fsPath === this.activeFilePath) {
+        continue;
+      }
+
+      visibl
