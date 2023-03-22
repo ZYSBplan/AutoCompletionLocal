@@ -132,4 +132,8 @@ export class PromptBuilder {
       });
     }
 
-    return visibleF
+    return visibleFiles;
+  }
+
+  private async getSelectedFiles() {
+    const contex
