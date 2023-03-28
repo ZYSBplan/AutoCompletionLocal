@@ -136,4 +136,7 @@ export class PromptBuilder {
   }
 
   private async getSelectedFiles() {
-    const contex
+    const contextFiles: string[] = getContextFiles();
+
+    return (
+      await
