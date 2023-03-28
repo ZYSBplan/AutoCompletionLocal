@@ -139,4 +139,7 @@ export class PromptBuilder {
     const contextFiles: string[] = getContextFiles();
 
     return (
-      await
+      await Promise.all(
+        contextFiles.map(async (path) => {
+          try {
+            
