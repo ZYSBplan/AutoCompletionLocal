@@ -142,4 +142,6 @@ export class PromptBuilder {
       await Promise.all(
         contextFiles.map(async (path) => {
           try {
-            
+            return {
+              path,
+              content: await works
