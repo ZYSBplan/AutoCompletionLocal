@@ -147,4 +147,5 @@ export class PromptBuilder {
               content: await workspace.fs.readFile(Uri.file(path)),
             };
           } catch (e) {
-        
+            removeContextFile(path);
+            return { path, cont
