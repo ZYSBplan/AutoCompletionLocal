@@ -155,4 +155,6 @@ export class PromptBuilder {
     ).filter((x) => x.content);
   }
 
-  ge
+  getFileInfo() {
+    return {
+      activeFile: this.activeFile,
