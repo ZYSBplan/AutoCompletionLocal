@@ -144,4 +144,7 @@ export class PromptBuilder {
           try {
             return {
               path,
-              content: await works
+              content: await workspace.fs.readFile(Uri.file(path)),
+            };
+          } catch (e) {
+        
