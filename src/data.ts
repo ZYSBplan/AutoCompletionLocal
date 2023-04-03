@@ -159,4 +159,9 @@ export class PromptBuilder {
     return {
       activeFile: this.activeFile,
       lineEnding: this.lineEnding,
-      isSingleLineCompletion: this.isSingleLineComp
+      isSingleLineCompletion: this.isSingleLineCompletions,
+    };
+  }
+
+  async getPrompt() {
+    const visibleFiles = th
