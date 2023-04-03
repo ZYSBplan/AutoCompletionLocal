@@ -158,3 +158,5 @@ export class PromptBuilder {
   getFileInfo() {
     return {
       activeFile: this.activeFile,
+      lineEnding: this.lineEnding,
+      isSingleLineCompletion: this.isSingleLineComp
