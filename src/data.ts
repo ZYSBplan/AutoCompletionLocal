@@ -148,4 +148,11 @@ export class PromptBuilder {
             };
           } catch (e) {
             removeContextFile(path);
-            return { path, cont
+            return { path, content: '' };
+          }
+        })
+      )
+    ).filter((x) => x.content);
+  }
+
+  ge
