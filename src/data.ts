@@ -165,4 +165,6 @@ export class PromptBuilder {
 
   async getPrompt() {
     const visibleFiles = this.getVisibleFiles();
-    const selectedFiles = await 
+    const selectedFiles = await this.getSelectedFiles();
+
+    const files = [...selectedFiles, ...visibl
