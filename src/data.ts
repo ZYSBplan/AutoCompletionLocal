@@ -167,4 +167,5 @@ export class PromptBuilder {
     const visibleFiles = this.getVisibleFiles();
     const selectedFiles = await this.getSelectedFiles();
 
-    const files = [...selectedFiles, ...visibl
+    const files = [...selectedFiles, ...visibleFiles];
+    files.push({ content: this.activeFile, path: this.activeFilePath }
