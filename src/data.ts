@@ -168,4 +168,9 @@ export class PromptBuilder {
     const selectedFiles = await this.getSelectedFiles();
 
     const files = [...selectedFiles, ...visibleFiles];
-    files.push({ content: this.activeFile, path: this.activeFilePath }
+    files.push({ content: this.activeFile, path: this.activeFilePath });
+
+    return files
+      .map(
+        ({ path, content }) =>
+          `${this.f
