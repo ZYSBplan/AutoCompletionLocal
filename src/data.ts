@@ -175,4 +175,6 @@ export class PromptBuilder {
         ({ path, content }) =>
           `${this.fileSeperatorTemplate.replace('${path}', path)}\n${content}`
       )
-      .join('
+      .join('\n\n');
+  }
+}
