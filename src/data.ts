@@ -173,4 +173,6 @@ export class PromptBuilder {
     return files
       .map(
         ({ path, content }) =>
-          `${this.f
+          `${this.fileSeperatorTemplate.replace('${path}', path)}\n${content}`
+      )
+      .join('
