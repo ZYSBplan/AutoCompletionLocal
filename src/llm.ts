@@ -6,3 +6,6 @@ export class LLM {
   client: OpenAI;
 
   constructor() {
+    this.apiEndpoint = workspace
+      .getConfiguration('localcompletion')
+      .get
