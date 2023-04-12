@@ -8,4 +8,6 @@ export class LLM {
   constructor() {
     this.apiEndpoint = workspace
       .getConfiguration('localcompletion')
-      .get
+      .get('active_endpoint', this.apiEndpoint);
+
+    this.client = new Ope
