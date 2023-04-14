@@ -10,4 +10,6 @@ export class LLM {
       .getConfiguration('localcompletion')
       .get('active_endpoint', this.apiEndpoint);
 
-    this.client = new Ope
+    this.client = new OpenAI({
+      apiKey: 'NONE',
+      baseURL: this.apiEndpoint,
