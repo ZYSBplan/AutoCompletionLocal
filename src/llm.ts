@@ -13,3 +13,9 @@ export class LLM {
     this.client = new OpenAI({
       apiKey: 'NONE',
       baseURL: this.apiEndpoint,
+    });
+  }
+
+  async getCompletion(
+    prompt: string,
+    stop: string[] = 
