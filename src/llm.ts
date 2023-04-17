@@ -20,4 +20,7 @@ export class LLM {
     prompt: string,
     stop: string[] = [],
     temp: number | null = null,
-    maxTokens: number | null = n
+    maxTokens: number | null = null
+  ) {
+    return await this.client.completions.create({
+      model:
