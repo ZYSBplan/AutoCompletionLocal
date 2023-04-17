@@ -18,4 +18,6 @@ export class LLM {
 
   async getCompletion(
     prompt: string,
-    stop: string[] = 
+    stop: string[] = [],
+    temp: number | null = null,
+    maxTokens: number | null = n
