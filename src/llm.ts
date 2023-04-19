@@ -23,4 +23,8 @@ export class LLM {
     maxTokens: number | null = null
   ) {
     return await this.client.completions.create({
-      model:
+      model: 'NONE',
+      prompt,
+      stream: true,
+      temperature:
+        temp ||
