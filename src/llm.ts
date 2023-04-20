@@ -28,3 +28,4 @@ export class LLM {
       stream: true,
       temperature:
         temp ||
+        workspace.getConfiguration('localcompletion').get('te
