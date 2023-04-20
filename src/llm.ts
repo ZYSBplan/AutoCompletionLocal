@@ -30,4 +30,6 @@ export class LLM {
         temp ||
         workspace.getConfiguration('localcompletion').get('temperature'),
       // eslint-disable-next-line @typescript-eslint/naming-convention
- 
+      max_tokens:
+        maxTokens ||
+        workspace.get
