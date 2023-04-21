@@ -35,4 +35,6 @@ export class LLM {
         workspace.getConfiguration('localcompletion').get('max_tokens'),
       stop: [
         ...stop,
- 
+        ...workspace
+          .getConfiguration('localcompletion')
+          
