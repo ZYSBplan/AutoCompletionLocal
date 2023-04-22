@@ -37,4 +37,9 @@ export class LLM {
         ...stop,
         ...workspace
           .getConfiguration('localcompletion')
-          
+          .get('stop_sequences', []),
+      ],
+    });
+  }
+
+  async getInstruct(
