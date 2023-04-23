@@ -43,3 +43,7 @@ export class LLM {
   }
 
   async getInstruct(
+    system: string,
+    prompt: string,
+    stop: string[] = [],
+    temp: num
