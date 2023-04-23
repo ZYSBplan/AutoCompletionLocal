@@ -46,4 +46,7 @@ export class LLM {
     system: string,
     prompt: string,
     stop: string[] = [],
-    temp: num
+    temp: number | null = null,
+    maxTokens: number | null = null
+  ) {
+    re
