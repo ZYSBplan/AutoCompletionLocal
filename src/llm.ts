@@ -49,4 +49,5 @@ export class LLM {
     temp: number | null = null,
     maxTokens: number | null = null
   ) {
-    re
+    return await this.client.chat.completions.create({
+      model: 
