@@ -50,4 +50,7 @@ export class LLM {
     maxTokens: number | null = null
   ) {
     return await this.client.chat.completions.create({
-      model: 
+      model: 'NONE',
+      messages: [
+        { role: 'system', content: system },
+  
