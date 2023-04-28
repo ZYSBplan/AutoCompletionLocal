@@ -53,4 +53,7 @@ export class LLM {
       model: 'NONE',
       messages: [
         { role: 'system', content: system },
-  
+        { role: 'user', content: prompt },
+      ],
+      stream: true,
+      temperat
