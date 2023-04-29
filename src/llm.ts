@@ -56,4 +56,6 @@ export class LLM {
         { role: 'user', content: prompt },
       ],
       stream: true,
-      temperat
+      temperature:
+        temp ||
+        workspace.getConfiguration('localcompletion
