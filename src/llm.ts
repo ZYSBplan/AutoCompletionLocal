@@ -58,4 +58,5 @@ export class LLM {
       stream: true,
       temperature:
         temp ||
-        workspace.getConfiguration('localcompletion
+        workspace.getConfiguration('localcompletion').get('temperature'),
+      // eslint-disable-next-line @typescript-eslint/
