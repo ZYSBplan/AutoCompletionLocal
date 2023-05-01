@@ -69,4 +69,6 @@ export class LLM {
           .getConfiguration('localcompletion')
           .get('stop_sequences', []),
       ],
-    }
+    });
+  }
+}
