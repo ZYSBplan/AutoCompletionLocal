@@ -62,4 +62,5 @@ export class LLM {
       // eslint-disable-next-line @typescript-eslint/naming-convention
       max_tokens:
         maxTokens ||
-      
+        workspace.getConfiguration('localcompletion').get('max_tokens'),
+     
