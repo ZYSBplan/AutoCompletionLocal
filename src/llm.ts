@@ -66,4 +66,7 @@ export class LLM {
       stop: [
         ...stop,
         ...workspace
-          .getConfiguration('localco
+          .getConfiguration('localcompletion')
+          .get('stop_sequences', []),
+      ],
+    }
