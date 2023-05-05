@@ -4,4 +4,5 @@ import { runTests } from '@vscode/test-electron';
 
 async function main() {
 	try {
-		// The 
+		// The folder containing the Extension Manifest package.json
+		// Pa
