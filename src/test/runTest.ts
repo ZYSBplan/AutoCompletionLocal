@@ -6,4 +6,7 @@ async function main() {
 	try {
 		// The folder containing the Extension Manifest package.json
 		// Passed to `--extensionDevelopmentPath`
-		const extensionDevelopmentP
+		const extensionDevelopmentPath = path.resolve(__dirname, '../../');
+
+		// The path to test runner
+		// Passed 
