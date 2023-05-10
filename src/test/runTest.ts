@@ -9,4 +9,5 @@ async function main() {
 		const extensionDevelopmentPath = path.resolve(__dirname, '../../');
 
 		// The path to test runner
-		// Passed 
+		// Passed to --extensionTestsPath
+		const extensionTestsPath = path.resolve(
