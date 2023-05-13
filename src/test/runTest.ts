@@ -12,4 +12,5 @@ async function main() {
 		// Passed to --extensionTestsPath
 		const extensionTestsPath = path.resolve(__dirname, './suite/index');
 
-		// Download VS Code, unzip it and run the integr
+		// Download VS Code, unzip it and run the integration test
+		await runTests({ extensionDevelopmentPath, extensionTestsPath 
