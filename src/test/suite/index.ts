@@ -13,4 +13,6 @@ export function run(): Promise<void> {
 
 	return new Promise((c, e) => {
 		const testFiles = new glob.Glob("**/**.test.js", { cwd: testsRoot });
-		const testFileStre
+		const testFileStream = testFiles.stream();
+
+		testFileStream.on("data", (file) => {
