@@ -16,3 +16,6 @@ export function run(): Promise<void> {
 		const testFileStream = testFiles.stream();
 
 		testFileStream.on("data", (file) => {
+			mocha.addFile(path.resolve(testsRoot, file));
+		});
+		testFileStream.on
