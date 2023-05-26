@@ -18,4 +18,8 @@ export function run(): Promise<void> {
 		testFileStream.on("data", (file) => {
 			mocha.addFile(path.resolve(testsRoot, file));
 		});
-		testFileStream.on
+		testFileStream.on("error", (err) => {
+			e(err);
+		});
+		testFileStream.on("end", () => {
+	
