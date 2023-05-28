@@ -22,4 +22,7 @@ export function run(): Promise<void> {
 			e(err);
 		});
 		testFileStream.on("end", () => {
-	
+			try {
+				// Run the mocha test
+				mocha.run(failures => {
+					if (fail
