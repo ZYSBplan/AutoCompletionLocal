@@ -36,3 +36,5 @@ export function run(): Promise<void> {
 				e(err);
 			}
 		});
+	});
+}
