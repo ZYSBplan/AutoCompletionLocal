@@ -68,3 +68,63 @@ export class ContextSelectionProvider implements TreeDataProvider<ContextItem> {
   refresh(): void {
     this._onDidChangeTreeData.fire();
   }
+
+  getChildren(element?: ContextItem | undefined): Thenable<ContextItem[]> {
+    if (!this.workspaceRoot) {
+      window.showInformationMessage(
+        'Unable to extend context in empty workspace!'
+      );
+      return Promise.resolve([]);
+    }
+
+    if (!element) {
+      return Promise.resolve(this.getFilesInDirectory(this.workspaceRoot));
+    }
+
+    if (!element.isFile) {
+      return Promise.resolve(this.getFilesInDirectory(element.path));
+    }
+
+    return Promise.resolve([]);
+  }
+
+  /** Return all file in the given directory */
+  async readDirectory(
+    path: string,
+    gitignore: boolean | undefined = undefined
+  ) {
+    if (gitignore === undefined) {
+      gitignore = workspace
+        .getConfiguration('localcompletion')
+        .get<boolean>('context_gitignore');
+    }
+
+    let files = await workspace.fs.readDirectory(Uri.file(path));
+
+    if (gitignore) {
+      let ignore: string[] = [];
+
+      try {
+        ignore = await this.git.checkIgnore(
+          files.map((f) => `${path}/${f[0]}`)
+        );
+      } catch (err: any) {
+        if (!err.message.includes('fatal: not a git repository')) {
+          throw err;
+        }
+      }
+      files = files.filter((f) => !ignore.includes(`${path}/${f[0]}`));
+    }
+
+    return files;
+  }
+
+  /** Get all files and directories at a given path */
+  async getFilesInDirectory(path: string) {
+    const files = await this.readDirectory(path);
+
+    return files
+      .map(([f, fileType]) => {
+        return new ContextItem(path + '/' + f, fileType === FileType.File, f);
+      })
+      .sort((a, b) => Number(a.isFile) - Number(b.isFile));
