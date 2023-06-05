@@ -128,3 +128,77 @@ export class ContextSelectionProvider implements TreeDataProvider<ContextItem> {
         return new ContextItem(path + '/' + f, fileType === FileType.File, f);
       })
       .sort((a, b) => Number(a.isFile) - Number(b.isFile));
+  }
+
+  /** Get all files in a given directory and subdirectories as a flat array */
+  async getFilesRecursive(path: string): Promise<ContextItem[]> {
+    const files = await this.readDirectory(path);
+
+    const items = await Promise.all(
+      files.map(async ([f, fileType]) => {
+        if (fileType === FileType.Directory) {
+          const dirFiles = await this.getFilesRecursive(path + '/' + f);
+          return dirFiles;
+        }
+
+        return new ContextItem(path + '/' + f, true, f);
+      })
+    );
+
+    return items.flat();
+  }
+}
+
+export class ContextSelectionView implements Disposable {
+  private workspaceRoot: string | undefined;
+  private treeView: TreeView<ContextItem>;
+  private provider: ContextSelectionProvider;
+
+  private static _instance: ContextSelectionView;
+
+  /** Get singleton instance of this class */
+  static instance() {
+    if (!ContextSelectionView._instance) {
+      throw Error(
+        'Tried to access ContextSelectionView Instance before building'
+      );
+    }
+
+    return ContextSelectionView._instance;
+  }
+
+  /** Build a new instance of this class */
+  static build(context: ExtensionContext) {
+    ContextSelectionView._instance = new ContextSelectionView(context);
+    return ContextSelectionView._instance;
+  }
+
+  constructor(private context: ExtensionContext) {
+    this.workspaceRoot =
+      workspace.workspaceFolders && workspace.workspaceFolders.length > 0
+        ? workspace.workspaceFolders[0].uri.fsPath
+        : undefined;
+
+    this.provider = new ContextSelectionProvider(this.workspaceRoot);
+    this.treeView = window.createTreeView('contextSelection', {
+      treeDataProvider: this.provider,
+    });
+
+    this.treeView.onDidChangeCheckboxState((e) => this.checkFiles(e));
+  }
+
+  private async checkFiles(event: TreeCheckboxChangeEvent<ContextItem>) {
+    const contextItemsStack = await Promise.all(
+      event.items.map(async ([item, checked]) => {
+        if (item.isFile) {
+          item.checkboxState = checked
+            ? TreeItemCheckboxState.Checked
+            : TreeItemCheckboxState.Unchecked;
+          return item;
+        }
+
+        return (await this.provider.getFilesRecursive(item.path)).map(
+          (item) => {
+            item.checkboxState = checked
+              ? TreeItemCheckboxState.Checked
+              : TreeItemCheckboxState.Unchecked;
