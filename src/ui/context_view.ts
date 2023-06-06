@@ -202,3 +202,46 @@ export class ContextSelectionView implements Disposable {
             item.checkboxState = checked
               ? TreeItemCheckboxState.Checked
               : TreeItemCheckboxState.Unchecked;
+            return item;
+          }
+        );
+      })
+    );
+
+    const contextItems = contextItemsStack.flat();
+    this.updateSelectedContext(contextItems);
+  }
+
+  private updateSelectedContext(contextItems: ContextItem[]) {
+    const config = workspace
+      .getConfiguration('localcompletion')
+      .get<string[]>('context_files', []);
+
+    contextItems.forEach((item) => {
+      const path = item.path.slice(this.workspaceRoot!.length + 1);
+      if (
+        item.checkboxState === TreeItemCheckboxState.Checked &&
+        !config.includes(path)
+      ) {
+        config.push(path);
+      } else if (
+        item.checkboxState === TreeItemCheckboxState.Unchecked &&
+        config.includes(path)
+      ) {
+        config.splice(config.indexOf(path), 1);
+      }
+    });
+
+    workspace
+      .getConfiguration('localcompletion')
+      .update('context_files', config, ConfigurationTarget.Workspace);
+  }
+
+  refresh() {
+    this.provider.refresh();
+  }
+
+  dispose() {
+    this.treeView.dispose();
+  }
+}
