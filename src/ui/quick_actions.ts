@@ -85,3 +85,19 @@ export class EndpointPicker {
       this.endpoints.push(endpoint);
     } else {
       window.showInformationMessage('Endpoint already exists');
+    }
+
+    workspace
+      .getConfiguration('localcompletion')
+      .update('endpoints', this.endpoints, ConfigurationTarget.Global);
+    workspace
+      .getConfiguration('localcompletion')
+      .update('active_endpoint', endpoint, ConfigurationTarget.Global);
+    this.completionProvider.updateSettings();
+  }
+
+  /** Show the endpoint picker */
+  show() {
+    this.quickPick.show();
+  }
+}
