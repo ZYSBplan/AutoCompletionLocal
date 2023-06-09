@@ -1,4 +1,6 @@
 import { workspace } from 'vscode';
 
 export class CharPairMap {
-  private openMapping: { [key: stri
+  private openMapping: { [key: string]: number };
+  private closeMapping: { [key: string]: number };
+  private 
