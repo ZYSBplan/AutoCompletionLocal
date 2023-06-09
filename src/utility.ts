@@ -7,4 +7,5 @@ export class CharPairMap {
   private charsClose: string[];
 
   constructor(
-    char
+    charsOpen: string[] = ['(', '[', '{', '<'],
+    charsClose: string[] = [')', ']', '}', 
