@@ -8,4 +8,8 @@ export class CharPairMap {
 
   constructor(
     charsOpen: string[] = ['(', '[', '{', '<'],
-    charsClose: string[] = [')', ']', '}', 
+    charsClose: string[] = [')', ']', '}', '>']
+  ) {
+    this.openMapping = {};
+    this.closeMapping = {};
+    this.c
