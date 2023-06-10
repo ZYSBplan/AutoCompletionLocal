@@ -15,4 +15,6 @@ export class CharPairMap {
     this.charsOpen = charsOpen;
     this.charsClose = charsClose;
 
-    this.charsOpen.fo
+    this.charsOpen.forEach(
+      (bracket, index) => (this.openMapping[bracket] = index)
+    )
