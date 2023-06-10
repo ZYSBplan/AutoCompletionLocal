@@ -12,4 +12,7 @@ export class CharPairMap {
   ) {
     this.openMapping = {};
     this.closeMapping = {};
-    this.c
+    this.charsOpen = charsOpen;
+    this.charsClose = charsClose;
+
+    this.charsOpen.fo
