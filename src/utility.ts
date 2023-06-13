@@ -20,4 +20,8 @@ export class CharPairMap {
     );
     this.charsClose.forEach(
       (bracket, index) => (this.closeMapping[bracket] = index)
-   
+    );
+  }
+
+  /** Create CharPairMap from a key-value array */
+  public stati
