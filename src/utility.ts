@@ -24,4 +24,5 @@ export class CharPairMap {
   }
 
   /** Create CharPairMap from a key-value array */
-  public stati
+  public static fromKeyValuePairs(charPairs: { [key: string]: string }) {
+    cons
