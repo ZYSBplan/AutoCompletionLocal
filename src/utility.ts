@@ -25,4 +25,6 @@ export class CharPairMap {
 
   /** Create CharPairMap from a key-value array */
   public static fromKeyValuePairs(charPairs: { [key: string]: string }) {
-    cons
+    const charsOpen = Object.keys(charPairs);
+    const charsClose = Object.values(charPairs);
+
