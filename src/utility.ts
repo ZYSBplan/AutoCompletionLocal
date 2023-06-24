@@ -46,3 +46,8 @@ export class CharPairMap {
   public getClose(char: string) {
     return this.charsOpen[this.closeMapping[char]];
   }
+}
+
+/** Check if brackets in code are balanced */
+export function checkBalance(
+  code: str
