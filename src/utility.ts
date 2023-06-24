@@ -50,4 +50,6 @@ export class CharPairMap {
 
 /** Check if brackets in code are balanced */
 export function checkBalance(
-  code: str
+  code: string,
+  charPairs: CharPairMap = new CharPairMap()
+): { balanc
