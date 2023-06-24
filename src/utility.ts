@@ -36,4 +36,8 @@ export class CharPairMap {
   }
 
   public isClose(char: string) {
-    return this.closeMapping[char] !==
+    return this.closeMapping[char] !== undefined;
+  }
+
+  public getOpen(char: string) {
+    return this.ch
