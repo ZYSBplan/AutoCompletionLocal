@@ -28,3 +28,7 @@ export class CharPairMap {
     const charsOpen = Object.keys(charPairs);
     const charsClose = Object.values(charPairs);
 
+    return new CharPairMap(charsOpen, charsClose);
+  }
+
+  public isOpen(cha
