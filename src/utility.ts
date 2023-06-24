@@ -43,4 +43,6 @@ export class CharPairMap {
     return this.charsClose[this.openMapping[char]];
   }
 
-  public getClose(char: strin
+  public getClose(char: string) {
+    return this.charsOpen[this.closeMapping[char]];
+  }
