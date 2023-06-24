@@ -31,4 +31,6 @@ export class CharPairMap {
     return new CharPairMap(charsOpen, charsClose);
   }
 
-  public isOpen(cha
+  public isOpen(char: string) {
+    return this.openMapping[char] !== undefined;
+ 
