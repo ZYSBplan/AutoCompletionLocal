@@ -52,4 +52,7 @@ export class CharPairMap {
 export function checkBalance(
   code: string,
   charPairs: CharPairMap = new CharPairMap()
-): { balanc
+): { balanced: boolean; balancedCode: string } {
+  const stack: { char: string; index: number }[] = [];
+
+  for (
