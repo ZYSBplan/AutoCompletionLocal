@@ -55,4 +55,6 @@ export function checkBalance(
 ): { balanced: boolean; balancedCode: string } {
   const stack: { char: string; index: number }[] = [];
 
-  for (
+  for (let i = 0; i < code.length; i++) {
+    const char = code[i];
+    if 
