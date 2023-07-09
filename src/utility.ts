@@ -57,4 +57,5 @@ export function checkBalance(
 
   for (let i = 0; i < code.length; i++) {
     const char = code[i];
-    if 
+    if (charPairs.isOpen(char)) {
+      stack.push({ char, index:
