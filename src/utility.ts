@@ -71,4 +71,9 @@ export function checkBalance(
 
       if (charPairs.getOpen(char) !== openChar) {
         const { index: balancedIndex } = stack[0];
-        return { balan
+        return { balanced: false, balancedCode: code.slice(0, balancedIndex) };
+      }
+    }
+  }
+
+  if (stack.l
