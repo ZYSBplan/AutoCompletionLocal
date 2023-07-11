@@ -70,4 +70,5 @@ export function checkBalance(
       };
 
       if (charPairs.getOpen(char) !== openChar) {
-    
+        const { index: balancedIndex } = stack[0];
+        return { balan
