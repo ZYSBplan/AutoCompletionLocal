@@ -82,4 +82,7 @@ export function checkBalance(
       index: number;
     };
 
-    return { balanced
+    return { balanced: false, balancedCode: code.slice(0, openIndex) };
+  }
+
+  return { balanced
