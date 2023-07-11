@@ -76,4 +76,6 @@ export function checkBalance(
     }
   }
 
-  if (stack.l
+  if (stack.length > 0) {
+    const { index: openIndex } = stack.pop() as {
+      ch
