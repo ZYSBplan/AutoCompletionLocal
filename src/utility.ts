@@ -78,4 +78,8 @@ export function checkBalance(
 
   if (stack.length > 0) {
     const { index: openIndex } = stack.pop() as {
-      ch
+      char: string;
+      index: number;
+    };
+
+    return { balanced
