@@ -61,4 +61,9 @@ export function checkBalance(
       stack.push({ char, index: i });
     } else if (charPairs.isClose(char)) {
       if (stack.length <= 0) {
-        return { balanced: false, balancedCode: code.slice(0, i)
+        return { balanced: false, balancedCode: code.slice(0, i) };
+      }
+
+      const { char: openChar } = stack.pop() as {
+        char: string;
+  
