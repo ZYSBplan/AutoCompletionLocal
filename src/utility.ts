@@ -66,4 +66,8 @@ export function checkBalance(
 
       const { char: openChar } = stack.pop() as {
         char: string;
-  
+        index: number;
+      };
+
+      if (charPairs.getOpen(char) !== openChar) {
+    
