@@ -85,4 +85,8 @@ export function checkBalance(
     return { balanced: false, balancedCode: code.slice(0, openIndex) };
   }
 
-  return { balanced
+  return { balanced: true, balancedCode: code };
+}
+
+/** Count number of lines */
+expo
