@@ -93,4 +93,10 @@ export function countLines(code: string, skipEmpty: boolean = false): number {
   let lines = code.split('\n');
 
   if (skipEmpty) {
-    lines = lines.filter((val) => val.tr
+    lines = lines.filter((val) => val.trim() !== '');
+  }
+
+  return lines.length;
+}
+
+/** Trim text to maxiumu
