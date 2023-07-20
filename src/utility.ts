@@ -89,4 +89,5 @@ export function checkBalance(
 }
 
 /** Count number of lines */
-expo
+export function countLines(code: string, skipEmpty: boolean = false): number {
+  let lines = c
