@@ -90,4 +90,7 @@ export function checkBalance(
 
 /** Count number of lines */
 export function countLines(code: string, skipEmpty: boolean = false): number {
-  let lines = c
+  let lines = code.split('\n');
+
+  if (skipEmpty) {
+    lines = lines.filter((val) => val.tr
