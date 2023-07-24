@@ -99,4 +99,6 @@ export function countLines(code: string, skipEmpty: boolean = false): number {
   return lines.length;
 }
 
-/** Trim text to maxiumu
+/** Trim text to maxiumum number of lines */
+export function trimLines(code: string, maxLines: number) {
+  con
