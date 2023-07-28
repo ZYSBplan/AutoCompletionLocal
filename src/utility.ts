@@ -101,4 +101,9 @@ export function countLines(code: string, skipEmpty: boolean = false): number {
 
 /** Trim text to maxiumum number of lines */
 export function trimLines(code: string, maxLines: number) {
-  con
+  const lines = code.split('\n');
+
+  if (lines.length <= maxLines) {
+    return code;
+  }
+
