@@ -111,4 +111,7 @@ export function trimLines(code: string, maxLines: number) {
 }
 
 /** Trim spaces and tabs at the end of a strin */
-export function trimSpacesEnd(code: string) 
+export function trimSpacesEnd(code: string) {
+  let pos = code.length - 1;
+  for (; pos >= 0; pos--) {
+    if (code.charAt(
