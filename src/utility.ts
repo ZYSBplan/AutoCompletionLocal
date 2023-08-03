@@ -110,4 +110,5 @@ export function trimLines(code: string, maxLines: number) {
   return lines.slice(0, maxLines).join('\n');
 }
 
-/** Trim spaces and tabs at
+/** Trim spaces and tabs at the end of a strin */
+export function trimSpacesEnd(code: string) 
