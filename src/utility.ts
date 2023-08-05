@@ -114,4 +114,9 @@ export function trimLines(code: string, maxLines: number) {
 export function trimSpacesEnd(code: string) {
   let pos = code.length - 1;
   for (; pos >= 0; pos--) {
-    if (code.charAt(
+    if (code.charAt(pos) !== ' ' && code.charAt(pos) !== '\t') {
+      break;
+    }
+  }
+
+  co
