@@ -120,4 +120,9 @@ export function trimSpacesEnd(code: string) {
   }
 
   const trimmed = code.slice(0, pos + 1);
-  const whitespace = code.slice(pos
+  const whitespace = code.slice(pos + 1);
+
+  return { trimmed, whitespace };
+}
+
+/** Get paths of context files
