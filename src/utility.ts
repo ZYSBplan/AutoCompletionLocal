@@ -119,4 +119,5 @@ export function trimSpacesEnd(code: string) {
     }
   }
 
-  co
+  const trimmed = code.slice(0, pos + 1);
+  const whitespace = code.slice(pos
