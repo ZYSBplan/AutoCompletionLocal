@@ -125,4 +125,6 @@ export function trimSpacesEnd(code: string) {
   return { trimmed, whitespace };
 }
 
-/** Get paths of context files
+/** Get paths of context files */
+export function getContextFiles() {
+  const workspaceRoot =
