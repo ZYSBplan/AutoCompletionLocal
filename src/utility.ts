@@ -128,3 +128,5 @@ export function trimSpacesEnd(code: string) {
 /** Get paths of context files */
 export function getContextFiles() {
   const workspaceRoot =
+    workspace.workspaceFolders && workspace.workspaceFolders.length > 0
+ 
