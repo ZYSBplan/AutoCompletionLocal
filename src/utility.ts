@@ -136,4 +136,7 @@ export function getContextFiles() {
     return [];
   }
 
-  return works
+  return workspace
+    .getConfiguration('localcompletion')
+    .get<string[]>('context_files', [])
+  
