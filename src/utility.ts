@@ -130,4 +130,10 @@ export function getContextFiles() {
   const workspaceRoot =
     workspace.workspaceFolders && workspace.workspaceFolders.length > 0
       ? workspace.workspaceFolders[0].uri.fsPath
-      : undefi
+      : undefined;
+
+  if (!workspaceRoot) {
+    return [];
+  }
+
+  return works
