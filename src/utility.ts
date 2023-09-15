@@ -139,4 +139,7 @@ export function getContextFiles() {
   return workspace
     .getConfiguration('localcompletion')
     .get<string[]>('context_files', [])
-  
+    .map((path) => `${workspaceRoot}/${path}`);
+}
+
+/** Remove path from contex
