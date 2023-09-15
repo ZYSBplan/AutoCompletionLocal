@@ -142,4 +142,6 @@ export function getContextFiles() {
     .map((path) => `${workspaceRoot}/${path}`);
 }
 
-/** Remove path from contex
+/** Remove path from context files */
+export function removeContextFile(path: string) {
+  const workspac
