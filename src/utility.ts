@@ -145,4 +145,6 @@ export function getContextFiles() {
 /** Remove path from context files */
 export function removeContextFile(path: string) {
   const workspaceRoot =
-    workspace.workspaceFolders && workspace.workspaceFolders.l
+    workspace.workspaceFolders && workspace.workspaceFolders.length > 0
+      ? workspace.workspaceFolders[0].uri.fsPath
+      : 
