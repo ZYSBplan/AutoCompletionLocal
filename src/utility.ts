@@ -147,4 +147,10 @@ export function removeContextFile(path: string) {
   const workspaceRoot =
     workspace.workspaceFolders && workspace.workspaceFolders.length > 0
       ? workspace.workspaceFolders[0].uri.fsPath
-      : 
+      : undefined;
+
+  if (!workspaceRoot) {
+    return;
+  }
+
+  if (path.startsWith(workspac
