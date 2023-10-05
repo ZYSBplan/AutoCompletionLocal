@@ -156,3 +156,6 @@ export function removeContextFile(path: string) {
   if (path.startsWith(workspaceRoot)) {
     path = path.slice(workspaceRoot.length + 1);
   }
+
+  const contextFiles = workspace
+    .getConfiguration('localcomp
