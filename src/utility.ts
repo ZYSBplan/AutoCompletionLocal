@@ -158,4 +158,7 @@ export function removeContextFile(path: string) {
   }
 
   const contextFiles = workspace
-    .getConfiguration('localcomp
+    .getConfiguration('localcompletion')
+    .get<string[]>('context_files', []);
+
+  contextFiles.splice(con
