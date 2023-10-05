@@ -153,4 +153,6 @@ export function removeContextFile(path: string) {
     return;
   }
 
-  if (path.startsWith(workspac
+  if (path.startsWith(workspaceRoot)) {
+    path = path.slice(workspaceRoot.length + 1);
+  }
