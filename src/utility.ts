@@ -161,4 +161,7 @@ export function removeContextFile(path: string) {
     .getConfiguration('localcompletion')
     .get<string[]>('context_files', []);
 
-  contextFiles.splice(con
+  contextFiles.splice(contextFiles.indexOf(path), 1);
+
+  workspace
+    .getConfiguration('localcompletion
