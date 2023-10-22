@@ -5,4 +5,6 @@
 		"lib": [
 			"ES2020"
 		],
-		"
+		"sourceMap": true,
+		"rootDir": "src",
+		"strict": true   /* enable all stric
