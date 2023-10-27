@@ -2,4 +2,5 @@
 
 ## What's in the folder
 
-* This folder contains
+* This folder contains all of the files necessary for your extension.
+* `package.json` - 
