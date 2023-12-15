@@ -11,4 +11,7 @@
 
 ## Setup
 
-* install the recommended extensions (amod
+* install the recommended extensions (amodio.tsl-problem-matcher and dbaeumer.vscode-eslint)
+
+
+## Get up and runni
