@@ -17,3 +17,4 @@
 ## Get up and running straight away
 
 * Press `F5` to open a new window with your extension loaded.
+* Run your command from the command palette by pressing (`Ctrl+Shift+P` or 
