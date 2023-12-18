@@ -14,4 +14,6 @@
 * install the recommended extensions (amodio.tsl-problem-matcher and dbaeumer.vscode-eslint)
 
 
-## Get up and runni
+## Get up and running straight away
+
+* Press `F5` to open a new window with your extension loaded.
