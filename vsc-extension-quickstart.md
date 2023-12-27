@@ -22,3 +22,5 @@
 * Find output from your extension in the debug console.
 
 ## Make changes
+
+* You can relaunch the extension from the debug toolbar after changing code in
