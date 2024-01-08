@@ -23,4 +23,5 @@
 
 ## Make changes
 
-* You can relaunch the extension from the debug toolbar after changing code in
+* You can relaunch the extension from the debug toolbar after changing code in `src/extension.ts`.
+* You can also reload (`Ctrl+R` or `Cmd+R` on 
