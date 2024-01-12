@@ -27,4 +27,6 @@
 * You can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes.
 
 
-## Explor
+## Explore the API
+
+* You can open the full set of our API wh
