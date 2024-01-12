@@ -31,3 +31,6 @@
 
 * You can open the full set of our API when you open the file `node_modules/@types/vscode/index.d.ts`.
 
+## Run tests
+
+* Open the debug viewlet (`Ctrl+Shift+D` or `Cmd+Shift+D` on Mac)
