@@ -29,4 +29,5 @@
 
 ## Explore the API
 
-* You can open the full set of our API wh
+* You can open the full set of our API when you open the file `node_modules/@types/vscode/index.d.ts`.
+
