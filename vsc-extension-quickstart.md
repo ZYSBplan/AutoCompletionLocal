@@ -37,4 +37,4 @@
 * Press `F5` to run the tests in a new window with your extension loaded.
 * See the output of the test result in the debug console.
 * Make changes to `src/test/suite/extension.test.ts` or create new test files inside the `test/suite` folder.
-  * T
+  * The provided test runner will only consider files matching the name pattern `**.t
