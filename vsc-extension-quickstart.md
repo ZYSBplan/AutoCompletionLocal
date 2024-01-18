@@ -42,4 +42,4 @@
 
 ## Go further
 
-* Reduce the extension size and imp
+* Reduce the extension size and improve the startup time by [bundling your extension](https://code.visua
