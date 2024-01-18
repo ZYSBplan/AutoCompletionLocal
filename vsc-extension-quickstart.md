@@ -42,4 +42,5 @@
 
 ## Go further
 
-* Reduce the extension size and improve the startup time by [bundling your extension](https://code.visua
+* Reduce the extension size and improve the startup time by [bundling your extension](https://code.visualstudio.com/api/working-with-extensions/bundling-extension).
+* [Publi
