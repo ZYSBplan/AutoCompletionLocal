@@ -35,4 +35,5 @@
 
 * Open the debug viewlet (`Ctrl+Shift+D` or `Cmd+Shift+D` on Mac) and from the launch configuration dropdown pick `Extension Tests`.
 * Press `F5` to run the tests in a new window with your extension loaded.
-* See the output of the test 
+* See the output of the test result in the debug console.
+* Make changes to `src/test/suite/extension.te
