@@ -4,4 +4,6 @@ A locally based LLM for code completion that works with any OpenAI compatible AP
 
 ## Features
 
-- Inline and multi-line code completio
+- Inline and multi-line code completion
+- Works with any OpenAI compatible API
+- Option to toggle between m
