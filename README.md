@@ -6,4 +6,5 @@ A locally based LLM for code completion that works with any OpenAI compatible AP
 
 - Inline and multi-line code completion
 - Works with any OpenAI compatible API
-- Option to toggle between m
+- Option to toggle between multiple API Endpoints
+- Reduces LLMs requests by saving previous responses, sk
