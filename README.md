@@ -7,4 +7,5 @@ A locally based LLM for code completion that works with any OpenAI compatible AP
 - Inline and multi-line code completion
 - Works with any OpenAI compatible API
 - Option to toggle between multiple API Endpoints
-- Reduces LLMs requests by saving previous responses, skipping completion depending on the last symbol, and only sending a request if there's no input f
+- Reduces LLMs requests by saving previous responses, skipping completion depending on the last symbol, and only sending a request if there's no input for a certain duration (configurable in settings)
+- Detec
