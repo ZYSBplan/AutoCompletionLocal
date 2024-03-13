@@ -13,4 +13,6 @@ A locally based LLM for code completion that works with any OpenAI compatible AP
 
 ### Roadmap
 
-- Adding more intuitive features to 
+- Adding more intuitive features to lessen LLM requests
+- Augment context to enhance output
+- Project Con
