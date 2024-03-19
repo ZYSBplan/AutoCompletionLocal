@@ -15,4 +15,5 @@ A locally based LLM for code completion that works with any OpenAI compatible AP
 
 - Adding more intuitive features to lessen LLM requests
 - Augment context to enhance output
-- Project Con
+- Project Context augmentation using embeddings or similar
+- Provide multiple completions based on
