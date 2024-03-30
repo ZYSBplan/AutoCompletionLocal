@@ -17,4 +17,5 @@ A locally based LLM for code completion that works with any OpenAI compatible AP
 - Augment context to enhance output
 - Project Context augmentation using embeddings or similar
 - Provide multiple completions based on history
-- Improve detection and reduction of repeated symbols at c
+- Improve detection and reduction of repeated symbols at completion end
+- Custom completion stopping based on bracket/brace/parenth
