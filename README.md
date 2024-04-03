@@ -28,4 +28,4 @@ Various settings including active_endpoint, endpoints, temperature, max_tokens, 
 ## Known Issues
 
 - The extension does not yet support a custom API key. This means it only works for APIs which do not need a key.
-- Model switchin
+- Model switching is not supported at the moment as most local tools don't 
