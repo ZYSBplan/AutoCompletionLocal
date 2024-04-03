@@ -23,4 +23,6 @@ A locally based LLM for code completion that works with any OpenAI compatible AP
 
 ## Extension Settings
 
-Various settings including active_endpoint, endpoints, temperature, max_tokens, stop_sequences, reduce_calls, skip_autocomplete_widget, completion_timeout, max_l
+Various settings including active_endpoint, endpoints, temperature, max_tokens, stop_sequences, reduce_calls, skip_autocomplete_widget, completion_timeout, max_lines, add_visible_files, context_files, and context_gitignore.
+
+## Known I
