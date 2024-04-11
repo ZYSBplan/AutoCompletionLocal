@@ -30,4 +30,5 @@ Various settings including active_endpoint, endpoints, temperature, max_tokens, 
 - The extension does not yet support a custom API key. This means it only works for APIs which do not need a key.
 - Model switching is not supported at the moment as most local tools don't support that property either.
 - Symlinks can cause problems with additional context selection. They are not handled properly at the moment.
-- Selected files in the `.gitignore` are not automatically remove
+- Selected files in the `.gitignore` are not automatically removed from the additional when `Apply .gitignore to context` is checked
+- In orde
