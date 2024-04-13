@@ -31,4 +31,4 @@ Various settings including active_endpoint, endpoints, temperature, max_tokens, 
 - Model switching is not supported at the moment as most local tools don't support that property either.
 - Symlinks can cause problems with additional context selection. They are not handled properly at the moment.
 - Selected files in the `.gitignore` are not automatically removed from the additional when `Apply .gitignore to context` is checked
-- In orde
+- In order to automatically ignore files in the `.gitignore` for the context I use a package whi
